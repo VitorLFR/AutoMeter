@@ -1,18 +1,18 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Kanit", sans-serif;
 }
 
-body{
+body {
     background: #202020;
     overflow-x: hidden;
 }
 
 /* Estilização do Header */
 
-header{
+header {
     background-color: #101010;
     color: white;
     height: 7vw;
@@ -22,12 +22,12 @@ header{
 
 }
 
-.cabeçalho > ul > li{
+.cabeçalho>ul>li {
     list-style-type: none;
     text-wrap: nowrap;
 }
 
-.cabeçalho > ul{
+.cabeçalho>ul {
     display: flex;
     justify-content: space-between;
     width: 25%;
@@ -36,7 +36,7 @@ header{
     font-weight: 200;
 }
 
-.cabeçalho{
+.cabeçalho {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -47,37 +47,37 @@ header{
     justify-content: space-between;
 }
 
-.cabeçalho > ul > li > a{
+.cabeçalho>ul>li>a {
     text-decoration: none;
     color: white;
 }
 
-.cabeçalho > ul > li > a:hover{
+.cabeçalho>ul>li>a:hover {
     text-decoration: underline;
 }
 
-.logoHome{
+.logoHome {
     margin: 0 auto;
     margin-top: 0.3%;
 }
 
-.logoHome > img{
+.logoHome>img {
     width: 18vw;
 }
 
-.accountBtn{
+.accountBtn {
     margin-top: 2%;
     margin-right: 1%;
     margin-left: -1%;
 }
 
-.accountBtn > img{
+.accountBtn>img {
     width: 3vw;
 }
 
 /* Começo da estilização primeira sessão */
 
-.inicio{
+.inicio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,38 +87,38 @@ header{
     margin-bottom: 2%;
 }
 
-.desc{
+.desc {
     width: 25%;
     color: white;
     font-weight: 600;
     margin: auto 0;
 }
 
-.descText{
+.descText {
     margin-bottom: 20%;
 }
 
-.descText > p{
+.descText>p {
     line-height: 3.5vw;
 }
 
-#p1{
+#p1 {
     font-size: 1.8vw;
 }
 
-#p2{
+#p2 {
     font-size: 3.2vw;
 }
 
-#p3{
+#p3 {
     font-size: 4.2vw;
 }
 
-.inicioImg > img{
+.inicioImg>img {
     width: 50vw;
 }
 
-.descButton > a{
+.descButton>a {
     padding: 1vw 2vw;
     background-color: #680707;
     border-radius: 1.5vw;
@@ -130,7 +130,7 @@ header{
     transition: 0.5s ease;
 }
 
-.descButton > a:hover{
+.descButton>a:hover {
     transition: 0.6s ease;
     background-color: #F21D2F;
 }
@@ -138,15 +138,15 @@ header{
 
 /* Começo estilização da section 2 */
 
-.help{
+.help {
     margin-bottom: 2%;
 }
 
-.helpTitle{
+.helpTitle {
     background-image: url("/medias/images/fundo_section2.svg") !important;
 }
 
-.helpName{
+.helpName {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -158,18 +158,18 @@ header{
     z-index: 2;
 }
 
-.helpName > div{
+.helpName>div {
     color: white;
 }
 
 
-.helpName > div > p{
+.helpName>div>p {
     text-decoration: underline;
     font-size: 3.5vw;
     font-weight: 700;
 }
 
-.helpName > div > a{
+.helpName>div>a {
     text-decoration: none;
     padding: 1.5vw 4vw;
     background-color: #680707;
@@ -182,17 +182,18 @@ header{
     transition: 0.5s ease;
 }
 
-.helpName > div > a:hover{
+.helpName>div>a:hover {
     transition: 0.6s ease;
     background-color: #F21D2F;
 }
 
 /* Começo da estilização do que Fazemos */
 
-.fazemos{
+.fazemos {
     margin-bottom: 8%;
 }
-.fazemos > h1{
+
+.fazemos>h1 {
     font-size: 2.7vw;
     color: white;
     text-align: center;
@@ -200,7 +201,7 @@ header{
     text-decoration: underline;
 }
 
-.fazemosContent{
+.fazemosContent {
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -208,21 +209,21 @@ header{
     justify-content: space-between;
 }
 
-.fazemosImage > img{
+.fazemosImage>img {
     width: 35vw;
 }
 
-.fazemosDescText{
+.fazemosDescText {
     color: white;
     width: 25vw;
 }
 
-.fazemosDescText > img{
+.fazemosDescText>img {
     position: absolute;
     width: 25vw;
 }
 
-.fazemosDescText > p{
+.fazemosDescText>p {
     width: 25vw;
     text-align: center;
     padding-top: 15%;
@@ -232,11 +233,32 @@ header{
 
 /* Começo da estilização do Ranking */
 
-.rankTitle{
+.RankingGeral{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.ranking{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+}
+
+.rankingTop {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+
+.rankTitle {
     background-image: url("/medias/images/fundo_section2.svg") !important;
 }
 
-.rankName{
+.rankName {
     height: 15vw;
     text-align: center;
     margin: 0 auto;
@@ -249,44 +271,66 @@ header{
     color: white;
 }
 
-.rankName > h1{
+.rankName>h1 {
     margin-top: 6%;
     font-size: 3vw;
 }
 
-.rankName > h3{
+.rankName>h3 {
     margin-bottom: 8%;
     font-size: 1.5vw;
 }
 
-.top{
+.top {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    width: 24%;
+    width: 48%;
     background-color: #ffffff12;
     border-radius: 3vw;
+    margin-bottom: 2%;
+    justify-content: space-between;
+    
 }
 
-.rankPhoto{
+.rankPhoto {
     margin-right: 5%;
 }
-.rankPhoto > img{
+
+.rankPhoto>img {
     width: 5vw;
 }
 
-.rankUser{
+.rankUser {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 
-.rankUserInfo > h1{
+.rankUserInfo {
+    width: 60%;
+    margin-right: 8%;
+}
+
+.rankUserInfo>h1 {
+    font-size: 1.1vw;
+}
+
+.rankUserInfo>p {
+    font-size: 0.8vw;
+    color: #680707;
+}
+
+.rankUserPosition {
+    background-color: #00000025;
+    padding: 4.5% 9%;
+    border-radius: 20vw;
+    text-align: center;
+}
+
+.rankUserPosition>p {
     font-size: 1.5vw;
+    color: #F21D2F;
+    text-align: center;
 }
 
-.rankUserInfo > p{
-    font-size: 1.2vw;
-}
-.rankUserPosition > p{
-    font-size: 1.3vw;
-}
