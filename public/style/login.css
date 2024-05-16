@@ -1,0 +1,106 @@
+.login{
+  background-image: url("/medias/images/Fundo_login.svg") !important;
+}
+
+.logo_login {
+  margin: 0 auto;
+}
+
+.loginLogo {
+  margin: 0 auto;
+  width: 20%;
+}
+
+.logo_login img {
+  width: 18.984375vw;
+}
+
+.card_login {
+  width: 68.125vw;
+  height: 49.53125vw;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  margin: 0 auto;
+  margin-top: 4vw;
+  border-radius: 0.78125vw;
+}
+
+.man_img {
+  width: 60%;
+}
+
+.man_img > img {
+  margin-left: 3.125vw;
+  width: 34.21875vw;
+  margin-top: 7.03125vw;
+}
+
+.forms_login {
+  width: 40%;
+  background-color: #f2f2f2;
+  border-top-right-radius: 0.78125vw;
+  border-top-left-radius: 3.90625vw;
+  border-bottom-right-radius: 1.5625vw;
+}
+
+.forms_login > p {
+  padding-left: 2.3vw;
+  margin-top: 3.125vw;
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+.form-user {
+  display: flex;
+  flex-direction: column;
+  margin-top: 9vw;
+}
+
+.form-user > label {
+  font-size: 1.7vw;
+  padding-left: 2.3vw;
+}
+
+.form-user2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vw;
+}
+
+.form-user2 > label {
+  font-size: 1.7vw;
+  padding-left: 2.3vw;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 0.15625vw solid #000;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.botao {
+  padding-left: 25%;
+}
+
+.button-login {
+  margin-top: 20px;
+  width: 164px;
+  height: 33px;
+  background-color: #561C24;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.5vw;
+}
+
+.button-login:hover {
+  background-color: #F21D2F;
+  cursor: pointer;
+}
+
+.login > span{
+  padding-top: 5%;
+  margin-top: 2vw;
+}

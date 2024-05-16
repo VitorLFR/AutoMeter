@@ -1,0 +1,40 @@
+.logoHome-areaturma > img{
+    width: 14.609375vw;
+}
+
+.cabeçalho-areaturma > ul > li{
+    list-style-type: none;
+    text-wrap: nowrap;
+}
+
+.cabeçalho-areaturma > ul{
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    margin-top: 0.5%;
+    font-size: 1.4vw;
+    font-weight: 200;
+}
+
+.cabeçalho-areaturma{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+}
+
+.cabeçalho-areaturma > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+.cabeçalho-areaturma > ul > li > a:hover{
+    text-decoration: underline;
+}
+
+.accountBtn-areaturma {
+    align-items: left   ;
+}
