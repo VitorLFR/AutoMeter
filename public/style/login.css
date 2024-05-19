@@ -87,11 +87,11 @@
 
 .button-login {
   margin-top: 20px;
-  width: 164px;
-  height: 33px;
+  width: 12.8125vw;
+  height: 2.578125vw;
   background-color: #561C24;
   color: white;
-  border-radius: 10px;
+  border-radius: 0.78125vw;
   font-size: 1.5vw;
 }
 

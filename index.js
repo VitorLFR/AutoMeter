@@ -30,6 +30,18 @@ app.get("/areaturma", (req, res) => {
     res.render("areaturma");
 });
 
+app.get("/infoturmas", (req, res) => {
+    res.render("infoturmas");
+});
+
+app.get("/conta", (req, res) => {
+    res.render("conta");
+});
+
+app.get("/status", (req, res) => {
+    res.render("status");
+});
+
 
 /* Conexão com banco de dados */
 const conn = mysql2.createConnection({

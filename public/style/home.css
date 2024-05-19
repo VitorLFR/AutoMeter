@@ -13,13 +13,12 @@ body {
 /* Estilização do Header */
 
 header {
-    background-color: #101010;
+    background-color: black;
     color: white;
     height: 7vw;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-
 }
 
 .cabeçalho>ul>li {
@@ -144,6 +143,8 @@ header {
 
 .helpTitle {
     background-image: url("/medias/images/fundo_section2.svg") !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .helpName {
@@ -233,29 +234,39 @@ header {
 
 /* Começo da estilização do Ranking */
 
-.RankingGeral{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-}
-
-.ranking{
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-}
-
-.rankingTop {
+.RankingGeral {
     width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+}
+
+.ranking {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+
+.rankingTop {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
     margin-top: 10%;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: #ffffff12;
+    border-radius: 3vw;
+    margin-bottom: 2%;
 }
 
 .rankTitle {
     background-image: url("/medias/images/fundo_section2.svg") !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .rankName {
@@ -281,17 +292,6 @@ header {
     font-size: 1.5vw;
 }
 
-.top {
-    display: flex;
-    flex-direction: row;
-    width: 48%;
-    background-color: #ffffff12;
-    border-radius: 3vw;
-    margin-bottom: 2%;
-    justify-content: space-between;
-    
-}
-
 .rankPhoto {
     margin-right: 5%;
 }
@@ -305,6 +305,7 @@ header {
     flex-direction: row;
     align-items: center;
     width: 100%;
+    color: white;
 }
 
 .rankUserInfo {
@@ -318,7 +319,7 @@ header {
 
 .rankUserInfo>p {
     font-size: 0.8vw;
-    color: #680707;
+    color: #F21D2F;
 }
 
 .rankUserPosition {
@@ -334,3 +335,289 @@ header {
     text-align: center;
 }
 
+.schoolInfo {
+    width: 53%;
+    margin-left: 3%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.schoolLogo>img{
+    width: 23.4375vw;
+}
+
+.studentInfo {
+    margin-top: 2%;
+}
+
+.studentInfo>img{
+    width: 12.5vw;
+}
+
+.studentInfo>h1 {
+    color: white;
+    font-size: 1.6vw;
+}
+
+.studentInfo>p {
+    color: #F21D2F;
+    font-size: 1.2vw;
+}
+
+.rankVerTudo {
+    margin-top: 10%;
+    align-items: center;
+    text-align: center;
+}
+
+.rankVerTudo>a {
+    text-decoration: none;
+    padding: 1vw 7vw;
+    background-color: #680707;
+    border-radius: 1.5vw;
+    border: 0.2vw white solid;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2vw;
+    transition: 0.5s ease;
+}
+
+.rankVerTudo>a:hover {
+    transition: 0.6s ease;
+    background-color: #F21D2F;
+}
+
+/* Estilização Span */
+
+.linhaRedDiv {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+    height: 0.5vw;
+    background-color: #F21D2F;
+    width: 80%;
+}
+
+/* Começo estilização do Sistema Organizado */
+
+.sistema {
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+
+.sistema>h1 {
+    font-size: 2.7vw;
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.boxContainer2 {
+    width: 45%;
+    background-color: #1B1A1A;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.boxContainerText {
+    width: 35%;
+}
+
+.boxContainerText>p {
+    font-size: 1.4vw;
+    font-weight: 500;
+}
+
+.boxContainer {
+    background-color: #1B1A1A;
+    width: 25%;
+    color: white;
+    padding-bottom: 2%;
+}
+
+.boxContainerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.boxContainerInfo>h1{
+    font-size: 1.7vw;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+}
+
+.aboutContainer>button {
+    background-color: #1B1A1A;
+    border: none;
+    justify-content: right;
+    margin-right: 8%;
+    margin-top: 8%;
+}
+
+.aboutContainer>button>img {
+    width: 2vw;
+}
+
+.photoContainer {
+    margin-bottom: 5%;
+}
+
+.photoContainer>img{
+    width: 100%;
+}
+
+.boxContainerInfo>p {
+    margin-top: 5%;
+    font-size: 1vw;
+    width: 60%;
+}
+
+/* Começando a estilização das parceiras */
+
+.comeceAqui {
+    color: white;
+    margin-top: 5%;
+    padding-bottom: 10%;
+}
+
+.comeceAqui>h3 {
+    font-size: 2.2vw;
+    margin-bottom: 10%;
+}
+
+.comeceAqui>a {
+    text-decoration: none;
+    padding: 1vw 4vw;
+    background-color: #680707;
+    border-radius: 1.5vw;
+    border: 0.2vw white solid;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2vw;
+    transition: 0.5s ease;
+}
+
+.comeceAqui>a:hover {
+    transition: 0.6s ease;
+    background-color: #F21D2F;
+}
+
+/* Área do Carrousel */
+
+.parcerias {
+    margin-top: 5%;
+}
+
+.parceriasContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.parcerias > h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.7vw;
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+
+.parcerias > h2 {
+    font-size: 3.2vw;
+    color: white;
+    margin-left: 8%;
+    margin-bottom: 3%;
+}
+
+.parceriasPhoto {
+    margin-left: 8%;
+}
+
+.parceriasPhoto>img{
+    width: 100%;
+}
+
+.parceriasEscolas {
+    width: 40%;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center; 
+    margin-left: 40%;
+}
+
+.escolaInfoContainer {
+    display: flex;
+    width: 600%; /* O container agora contém 6 slides */
+    animation: slide 60s infinite linear;
+    margin-top: 5%;
+}
+
+.escolaInfo {
+    display: flex;
+    flex-direction: row;
+    width: calc(100% / 6); /* Cada slide ocupa um sexto do container */
+    box-sizing: border-box;
+    padding: 2vw 2vw;
+    border: 0.1vw #F21D2F solid;
+    margin-right: 20px;
+}
+
+.escolaPhoto {
+    width: 60%;
+}
+
+.escolaPhoto > img {
+    width: 100%;
+}
+
+.escolaDesc {
+    width: 30%;
+    margin-left: 10%;
+}
+
+.escolaDesc > p {
+    color: white;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    16.66% { transform: translateX(-16.66%); }
+    33.33% { transform: translateX(-33.33%); }
+    50% { transform: translateX(-50%); }
+    66.66% { transform: translateX(-66.66%); }
+    83.33% { transform: translateX(-83.33%); }
+    100% { transform: translateX(-100%); }
+}

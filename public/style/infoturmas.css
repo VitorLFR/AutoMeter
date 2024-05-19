@@ -1,0 +1,25 @@
+#p-sala {
+  font-size: 2vw;
+}
+
+.cards-infoturmas {
+  color: white;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 5vw;
+}
+
+.card-infoturmas {
+    text-align: center;
+    font-size: 1vw;
+    width: 22%;
+}
+
+.card-infoturmas > p {
+    font-size: 1.6vw;
+}
+  

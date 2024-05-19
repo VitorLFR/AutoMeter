@@ -1,0 +1,75 @@
+/* Começo estilização da área dos pontos */
+
+.informacoes{
+    text-align: center;
+}
+.informacoes>h1{
+    margin-top: 5%;
+    font-size: 1.5vw;
+}
+
+.informacoesText{
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+
+#userPoints{
+    font-size: 1.1vw;
+    margin-bottom: 2%;
+}
+
+
+/* começo estilização tabela de status */
+.statusDisplay{
+    margin: 0 auto;
+}
+
+.statusTable{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#statusConfig, #statusTipo, #statusDescricao, #statusGravidade, #statusResponsavel{
+    width: 20%;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    text-align: center;
+}
+
+#statusConfig, #statusTipo, #statusDescricao{
+    background-color: black;
+}
+
+#statusGravidade, #statusResponsavel{
+    background-color: #1B1A1A;
+}
+
+#statusConfig>h1, #statusTipo>h1, #statusDescricao>h1, #statusGravidade>h1, #statusResponsavel>h1{
+    font-size: 1.4vw;
+}
+
+#statusConfigItem>h2, #statusTipoItem>h2, #statusDescricaoItem>h2, #statusGravidadeItem>h2, #statusResponsavelItem>h2{
+    font-weight: 300;
+    font-size: 1.1vw;
+    margin-top: 5%;
+}
+
+#statusDescricaoItem>a{
+    color: #F21D2F;
+    text-decoration: none;
+    margin-top: 5%;
+}
+
+.statusTable > div > div{
+    margin-top: 10%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    font-size: 1vw;
+}
+
+#statusDescricaoItem>a:hover{
+    text-decoration: underline;
+    text-decoration-color: #F21D2F;
+}
