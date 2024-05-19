@@ -18,6 +18,20 @@
     margin-bottom: 2%;
 }
 
+.points>button{
+    color: #F21D2F;
+    font-size: 2vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    border-radius: 2vw;
+    background-color: #1B1A1A;
+}
+
+.points>input{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 /* começo estilização tabela de status */
 .statusDisplay{

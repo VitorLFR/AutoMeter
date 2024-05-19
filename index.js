@@ -42,6 +42,15 @@ app.get("/status", (req, res) => {
     res.render("status");
 });
 
+app.get("/avaliacao", (req, res) => {
+    res.render("avaliacao");
+});
+
+app.get("/avaliacao/ocorrencia", (req, res) => {
+    res.render("avaliacaoOcorrencia");
+});
+
+
 
 /* Conexão com banco de dados */
 const conn = mysql2.createConnection({

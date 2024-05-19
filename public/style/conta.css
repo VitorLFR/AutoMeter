@@ -32,13 +32,19 @@
   margin-bottom: 100%;
 }
 
-.menu-lateral-itens > p {
+.menu-lateral-itens > a {
   font-size: 1.5vw;
   margin-top: 45%;
+  text-decoration: none;
+  color: white;
 }
 
 .menu-lateral-itens2{
   margin-top: 100%;
+}
+
+.menu-lateral-itens > a:hover{
+  text-decoration: underline;
 }
 
 .menu-lateral-itens2 > a{
