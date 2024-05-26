@@ -2,14 +2,14 @@
     <div class="cabeçalho-areaturma">
 
         <div class="logoHome-areaturma">
-            <img src="medias/images/Logo.svg" alt="" />
+            <img src="/medias/images/Logo.svg" alt="" />
         </div>
 
         <div class="cabecalhoOp">
             <ul>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href=""><img src="medias/images/signInIcon.svg" alt="" /></a></li>
+                <li><a href="/conta"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
             </ul>
         </div>
 
@@ -22,8 +22,8 @@
 
         <div class="menu-lateral-itens">
             <h2>Status</h2>
-            <p>Elogios</p>
-            <p>Ocorrências</p>
+            <a href="/avaliacao.elogio">Elogios</a>
+            <a href="/avaliacao.ocorrencia">Ocorrências</a>
         </div>
 
         <div class="menu-lateral-itens2">
@@ -35,8 +35,10 @@
     <div class="informacoes">
 
         <div class="img-center">
-            <img src="medias/images/cunamata.svg" alt="" />
+            <img src="{{imagemAluno}}" alt="" />
         </div>        
+
+        <h2>{{nomeAluno}}</h2>
 
         <p class="informacoesText">Elogios ou Ocorrências</p>
 
@@ -113,7 +115,7 @@
 
     <div class="footer-conta">
         <div class="img-footer">
-            <img src="medias/images/Logo.svg" alt="" />
+            <img src="/medias/images/Logo.svg" alt="" />
         </div>
 
         <p>@2024 direitos autorais de autometer</p>

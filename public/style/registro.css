@@ -1,0 +1,69 @@
+.main-registro {
+    color: white;
+}
+
+.info-registro {
+    width: 70%;
+    padding-left: 3.125vw;
+}
+
+.completo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3.125vw;
+}
+
+.detalhe-registro {
+    padding: 4.6875vw;
+    font-size: 1.7vw;
+}
+
+.descricaoBox-registro{
+    flex-direction: column !important;
+    align-items: flex-start;
+    margin-bottom: 2%;
+    font-size: 1.25vw;
+}
+
+.descricaoBox-registro >input{
+    border: none;
+    background-color: #1B1A1A;
+    border-bottom: 0.01vw #FFFFFF solid;
+    width: 28.359375vw;
+    margin-top: 1%;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.configuracaoBox-registro > select{
+    width: 14.6875vw;
+    height: 100%;
+    font-size: 1.2vw;
+}
+
+.registro-email {
+    margin-top: 2.34375vw;
+}
+
+
+.botao-registro {
+    padding-left: 10%;
+  }
+  
+  .button-login-registro {
+    margin-top: 50px;
+    width: 15vw;
+    height: 2.578125vw;
+    background-color: #561C24;
+    color: white;
+    border-radius: 0.78125vw;
+    font-size: 1.5vw;
+    margin-bottom: 7.8125vw;
+  }
+  
+  .button-login-registro:hover {
+    background-color: #F21D2F;
+    cursor: pointer;
+  }

@@ -1,0 +1,101 @@
+.mainAreadeacesso{
+    margin-top: 3%;
+}
+
+.mainAreadeacesso>a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10%;
+    font-size: 1.2vw;
+}
+
+.userMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.userMain>h1{
+    color: white;
+    font-size: 2vw;
+    margin-bottom: 5%;
+}
+
+.userMain>div>img{
+    width: 15vw;
+}
+
+.userTable{
+    margin-top: 8%;
+    width: 50% !important;
+    margin: 8% auto !important;
+}
+
+.userTable>div{
+    width: 25% !important;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+#statusEstudante, #statusProfessor{
+    background-color: #1B1A1A;
+}
+
+.userTable>div>h1{
+    color: white;
+    font-size: 1.3vw;
+}
+
+.userTable>div>div>h2{
+    color: white;
+}
+
+.userTable{
+    width: 60%;
+}
+
+.userTable>div{
+    width: 20%;
+    text-align: center;
+}
+
+.userOptions{
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.boxOption{
+    background-color: #1B1A1A;
+    border: 0.3vw #000000 solid;
+    width: 30%;
+    border-radius: 2vw;
+    padding: 4vw 2vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.option>img{
+    width: 6vw;
+    margin: 0 auto;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.option>a{
+    color: white;
+    font-size: 1.2vw;
+    position: absolute;
+    width: 60%;
+    left: 20%;
+    text-decoration: none;
+}

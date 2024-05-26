@@ -19,7 +19,23 @@
     width: 22%;
 }
 
+.card-infoturmas > img{
+  width: 11.4vw;
+  height: 15vw;
+}
+
 .card-infoturmas > p {
-    font-size: 1.6vw;
+    font-size: 1.5vw;
+    color: #F21D2F;
+}
+
+.card-infoturmas > a {
+    font-size: 1.2vw;
+    text-decoration: none;
+    color: white;
+}
+.card-infoturmas > a:hover {
+    text-decoration: underline;
+    color: #F21D2F;
 }
   

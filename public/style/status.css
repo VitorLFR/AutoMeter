@@ -1,11 +1,14 @@
-/* Começo estilização da área dos pontos */
-
 .informacoes{
     text-align: center;
+    height: 100%;
 }
 .informacoes>h1{
     margin-top: 5%;
     font-size: 1.5vw;
+}
+
+.informacoes>h2{
+    margin-top: 2%;
 }
 
 .informacoesText{
@@ -86,4 +89,12 @@
 #statusDescricaoItem>a:hover{
     text-decoration: underline;
     text-decoration-color: #F21D2F;
+}
+
+.img-center{
+    height: 22vw;
+}
+
+.img-center>img{
+    height: 100%;
 }

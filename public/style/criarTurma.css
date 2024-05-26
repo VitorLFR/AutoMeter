@@ -1,0 +1,27 @@
+.part1-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.botao-info {
+    padding-left: 10%;
+    text-align: center;
+  }
+  
+  .button-login-info {
+    margin-top: 50px;
+    width: 15vw;
+    height: 2.578125vw;
+    background-color: #561C24;
+    color: white;
+    border-radius: 0.78125vw;
+    font-size: 1.5vw;
+    margin-bottom: 7.8125vw;
+  }
+  
+  .button-login-info:hover {
+    background-color: #F21D2F;
+    cursor: pointer;
+  }

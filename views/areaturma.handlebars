@@ -9,10 +9,7 @@
       <ul>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
-        <li><a href=""><img
-              src="medias/images/signInIcon.svg"
-              alt=""
-            /></a></li>
+        <li><a href="/conta"><img src="medias/images/signInIcon.svg" alt="" /></a></li>
       </ul>
     </div>
 
@@ -22,7 +19,7 @@
 <section class="area">
 
   <div class="primeira-sessao">
-    <p>Voltar</p>
+    <a href="">Voltar</a>
   </div>
 
   <div class="segunda-sessao">
@@ -35,75 +32,24 @@
 </section>
 
 <section class="cards">
-
+  {{#each turmas}}
   <div class="card">
-
-    <img src="medias/images/img-senai.svg" alt="" />
-
+    <img src="{{imagem}}" alt="" />
     <p id="p-3">TURMA</p>
-    <p>SESI3M2024</p>
+    <p>{{nome}}</p>
     <p id="p-4">TURNO</p>
-    <p>Manhã</p>
+    <p>{{turno}}</p>
     <p id="p-4">MATÉRIA</p>
-    <p>Análise e Desenvolvimento de Sistemas</p>
+    <p>{{materia}}</p>
     <p id="p-4">INÍCIO</p>
-    <p>23/01/2023</p>
+    <p>{{inicio}}</p>
     <p id="p-4">FIM</p>
-    <p>18/12/2024</p>
-
+    <p>{{termino}}</p>
+    <div class="card-button">
+      <a href="/infoturmas/{{id}}">Acessar</a>
+    </div>
   </div>
-
-  <div class="card">
-
-    <img src="medias/images/img-senai.svg" alt="" />
-
-    <p id="p-3">TURMA</p>
-    <p>SESI3M2024</p>
-    <p id="p-4">TURNO</p>
-    <p>Manhã</p>
-    <p id="p-4">MATÉRIA</p>
-    <p>Análise e Desenvolvimento de Sistemas</p>
-    <p id="p-4">INÍCIO</p>
-    <p>23/01/2023</p>
-    <p id="p-4">FIM</p>
-    <p>18/12/2024</p>
-
-  </div>
-
-  <div class="card">
-
-    <img src="medias/images/img-senai.svg" alt="" />
-
-    <p id="p-3">TURMA</p>
-    <p>SESI3M2024</p>
-    <p id="p-4">TURNO</p>
-    <p>Manhã</p>
-    <p id="p-4">MATÉRIA</p>
-    <p>Análise e Desenvolvimento de Sistemas</p>
-    <p id="p-4">INÍCIO</p>
-    <p>23/01/2023</p>
-    <p id="p-4">FIM</p>
-    <p>18/12/2024</p>
-
-  </div>
-
-  <div class="card">
-
-    <img src="medias/images/img-senai.svg" alt="" />
-
-    <p id="p-3">TURMA</p>
-    <p>SESI3M2024</p>
-    <p id="p-4">TURNO</p>
-    <p>Manhã</p>
-    <p id="p-4">MATÉRIA</p>
-    <p>Análise e Desenvolvimento de Sistemas</p>
-    <p id="p-4">INÍCIO</p>
-    <p>23/01/2023</p>
-    <p id="p-4">FIM</p>
-    <p>18/12/2024</p>
-
-  </div>
-
+  {{/each}}
 </section>
 
 <footer class="quarta-sessao">

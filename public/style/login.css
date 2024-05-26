@@ -1,5 +1,7 @@
 .login{
   background-image: url("/medias/images/Fundo_login.svg") !important;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .logo_login {
@@ -86,7 +88,7 @@
 }
 
 .button-login {
-  margin-top: 20px;
+  margin-top: 1.5625vw;
   width: 12.8125vw;
   height: 2.578125vw;
   background-color: #561C24;

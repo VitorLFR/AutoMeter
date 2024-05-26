@@ -21,6 +21,7 @@
 .informacoes {
   width: 100%;
   height: 50vw;
+  text-align: center;
 }
 
 .menu-lateral-itens {
@@ -40,7 +41,7 @@
 }
 
 .menu-lateral-itens2{
-  margin-top: 100%;
+  margin-top: 22vw;
 }
 
 .menu-lateral-itens > a:hover{
@@ -90,7 +91,7 @@
 .informacoes > p {
   margin-top: 1.5625vw;
   font-size: 1.875vw;
-  padding-left: 3.8vw;
+  margin-bottom: 3%;
 }
 
 .container-conta {

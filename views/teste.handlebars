@@ -1,0 +1,185 @@
+{{#each listaUsers}}
+
+  <p>Id do usuário: {{this.id}}</p>
+  <P>Nome do usuário:{{this.nome}}</P>
+  <p>Email do usuário:{{this.email}}</p>
+  <p>Nível de acesso do usuário:{{this.niveldeacesso}}</p>
+  <img src={{this.imagem}} alt="" style="width: 100px;" />
+  <hr />
+
+{{/each}}
+
+<h1>Lista Estudantes</h1>
+
+{{#each listaEstudante}}
+
+  <p>Id do Estudante: {{this.id}}</p>
+  <p>Turma do Estudante: {{this.turma}}</p>
+  <hr />
+
+{{/each}}
+
+<h1>Lista Turmas</h1>
+
+{{#each listaTurma}}
+
+  <p>Id da Turma: {{this.id}}</p>
+  <p>Nome da Turma: {{this.nome}}</p>
+  <hr />
+
+{{/each}}
+
+<h1>Lista de Funcionários</h1>
+
+{{#each listaFuncionarios}}
+
+  <p>Id do funcionário: {{this.id}}</p>
+  <p>Tipo do funcionário: {{this.tipo}}</p>
+  <hr />
+
+{{/each}}
+
+<h1>Lista dos Professores</h1>
+
+{{#each listaProfessores}}
+
+  <p>Id do Professor: {{this.id}}</p>
+  <hr />
+
+{{/each}}
+
+<h1>Turmas</h1>
+
+{{#each listaTurma}}
+  <p>Nome: {{this.nome}}</p>
+  <p>Matéria: {{this.materia}}</p>
+  <p>Capacidade: {{this.capacidade}}</p>
+  <p>Sala: {{this.sala}}</p>
+  <p>Início: {{this.inicio}}</p>
+  <p>Término: {{this.termino}}</p>
+
+  <h3>Professores:</h3>
+  {{#each this.listaProfessoresDasTurmas}}
+    <p>{{this.nome}}</p>
+  {{/each}}
+
+  <hr>
+{{/each}}
+
+<h1>TESTE PROFESSORES</h1>
+{{#each listaProfessores}}
+  <p>Tem algum professor aqui</p>
+{{/each}}
+
+<hr>
+
+<h1>Formulário Login</h1>
+<form action="/login" method="post">
+  <label for="email">Email</label>
+  <input type="text" name="email" id="email" />
+
+  <label for="senha">Senha</label>
+  <input type="password" name="senha" id="senha" />
+
+  <button type="submit">Enviar</button>
+</form>
+
+<hr style="margin-bottom: 5%;" />
+
+<h1>Registro</h1>
+<form action="/teste/registro" method="post">
+
+  <labe for="">Nome</labe>
+  <input type="text" name="nome" id="" />
+
+  <label for="">Email</label>
+  <input type="text" name="email" />
+
+  <label for="">Senha</label>
+  <input type="text" name="senha" />
+
+  <label for="">Imagem</label>
+  <input type="text" name="imagem" />
+
+  <label for="">Nivel de acesso</label>
+  <select name="nivelacesso">
+    <option value="Nível de acesso">Nível de acesso</option>
+    <option value="Administrativo Total">Administrativo Total</option>
+    <option value="Acesso Pedagógico Avançado">Acesso Pedagógico Avançado</option>
+    <option value="Acesso Pedagógico">Acesso Pedagógico</option>
+    <option value="Acesso Básico">Acesso Básico</option>
+  </select>
+
+  <select name="tipo">
+    <option value="Tipo">Tipo</option>
+    <option value="Estudante">Estudante</option>
+    <option value="Professor">Professor</option>
+    <option value="Outro">Outro Funcionario</option>
+  </select>
+
+  <button type="submit">Enviar</button>
+</form>
+
+<hr style="margin-bottom: 5%;" />
+
+<h1>Criar turma</h1>
+<form action="/teste/registroTurma" method="post">
+
+  <labe for="">Nome</labe>
+  <input type="text" name="nome" id="" />
+
+  <label for="">Matéria</label>
+  <input type="text" name="materia" />
+
+  <label for="">Sala</label>
+  <input type="text" name="sala" />
+
+  <label for="">Capacidade</label>
+  <input type="text" name="capacidade" />
+
+  <label for="">Inicio</label>
+  <input type="text" name="inicio" />
+
+  <label for="">Término</label>
+  <input type="text" name="termino" />
+
+  <label for="">Imagem</label>
+  <input type="text" name="imagem" />
+
+  <label for="">Professor</label>
+  <select name="professor">
+    {{#each listaProfessores}}
+      <option value={{this.nome}}>{{this.nome}}</option>
+    {{/each}}
+  </select>
+
+  <label for="">Turno</label>
+  <select name="turno">
+    <option value="Turno">Turno</option>
+    <option value="Manhã">Manhã</option>
+    <option value="Tarde<">Tarde</option>
+    <option value="Noite">Noite</option>
+  </select>
+
+  <button type="submit">Enviar</button>
+</form>
+
+<hr />
+
+<h1>Colocar estudante em uma turma</h1>
+
+<form action="/teste/alunoTurma" method="post">
+  <label for="">Nome do Aluno</label>
+  <input type="text" name="nome" />
+
+  <label for="">Adicionar na turma</label>
+  <select name="Turma" id="">
+    {{#each listaTurmas}}
+
+      <option value={{this.nome}}>{{this.nome}}</option>
+
+    {{/each}}
+  </select>
+
+  <button type="submit">Enviar</button>
+</form>

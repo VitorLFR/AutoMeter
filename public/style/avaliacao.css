@@ -20,6 +20,7 @@
     flex-direction: column;
 }
 
+
 .configuracaoContainer{
     display: flex;
     flex-direction: row;
@@ -30,6 +31,17 @@
     display: flex;
     flex-direction: row;
     width: 40%;
+}
+
+.configuracaoBox>select{
+    width: 70%;
+    height: 100%;
+    font-size: 1.2vw;
+}
+
+select>option{
+    width: 50%;
+    height: 50%;
 }
 
 .configuracaoBox>p{
@@ -57,4 +69,19 @@
     padding: 0.5vw 2vw;
     border-radius: 1vw;
     color: white;
+    font-size: 1.2vw;
+}
+
+
+.elogioSend>button{
+    background-color: #F21D2F;
+    padding: 0.5vw 2vw;
+    border-radius: 1vw;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.points>input{
+    width: 10%;
+    height: 2vw;
 }

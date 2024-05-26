@@ -32,6 +32,10 @@
   color: white;
 }
 
+.cabecalhoOp > ul > li > a > img{
+  width: 3.75vw;
+}
+
 .cabeçalho-areaturma > ul > li > a:hover {
   text-decoration: underline;
 }
@@ -44,12 +48,13 @@
   padding: 4.6875vw;
 }
 
-.primeira-sessao > p {
+.primeira-sessao > a {
   color: white;
   font-size: 1.7vw;
-}
+  text-decoration: none;
+} 
 
-.primeira-sessao > p:hover {
+.primeira-sessao > a:hover {
   color: #F21D2F;
   cursor: pointer;
 }
@@ -74,6 +79,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   margin-top: 9.375vw;
@@ -84,10 +90,12 @@
   background-color: #1b1a1a;
   font-size: 1vw;
   width: 22%;
+  margin-bottom: 5%;
 }
 
 .card > img {
   width: 100%;
+  height: 7vw;
 }
 
 #p-3 {
@@ -101,6 +109,26 @@
 
 .card p {
   padding: 0.234375vw;
+}
+
+.card-button{
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+.card a{
+  background-color: #561C24;
+  color: white;
+  text-decoration: none;
+  border-radius: 1vw;
+  padding: 0.8vw 3vw;
+  border: 0.2vw black solid;
+  transition: 1s ease;
+}
+
+.card a:hover{
+  transition: 1s ease;
+  background-color: #F21D2F;
+  border-radius: 2vw;
 }
 
 .quarta-sessao {

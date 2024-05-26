@@ -22,12 +22,12 @@
   
     <div class="menu-lateral-itens">
       <h2>Minha Conta</h2>
-      <p>Informações</p>
-      <p id="p-color">Deletar conta</p>
+      <a href="#">Informações</a>
+      {{!-- <a href="#" id="p-color">Deletar conta</a> COMENTEI POIS NÃO FAZ SENTIDO O PRÓPRIO USUÁRIO CONSEGUIR DELETAR SUA PRÓPRIA CONTA NO NOSSO PROJETO --}}
     </div>
     
     <div class="menu-lateral-itens2">
-      <a id="p-voltar" href="#">VOLTAR</a>
+      <a id="p-voltar" href="/areadeacesso">VOLTAR</a>
     </div>
     
   </div>
@@ -46,13 +46,13 @@
 
         <div class="colum-1">
           <p id="p1-conta">Nome Completo</p>
-          <p>João Arisco da Silva</p>
+          <p>{{nomeCompleto}}</p>
 
           <p id="p-conta">Email</p>
-          <p>joaoariscosilva120@gmail.com</p>
+          <p>{{email}}</p>
 
           <p id="p-conta">Nível de Acesso</p>
-          <p>Acesso Pedagógico Avançado</p>
+          <p>{{nivelDeAcesso}}</p>
         </div>
 
         <div class="colum-2">

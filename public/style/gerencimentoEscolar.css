@@ -1,0 +1,35 @@
+.cards-gerenciamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 7.8125vw;
+    margin-bottom: 15.625vw;
+}
+
+.cards-gerenciamento{
+    color: white;
+}
+
+.card-gerenciamento {
+    width: 20%;
+    height: 15.625vw;
+    text-align: center;
+    background: #1B1A1A;
+    border-radius: 1.171875vw;
+    border: solid 0.1171875vw black;
+    padding-top: 1.8vw;
+}
+
+.card-gerenciamento > img {
+    width: 40%;
+}
+
+.descricao-gerenciamento {
+    margin-top: 0.78125vw;
+}
+
+.descricao-gerenciamento > p {  
+    font-size: 1.5625vw;
+}

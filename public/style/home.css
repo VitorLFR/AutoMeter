@@ -621,3 +621,53 @@ header {
     83.33% { transform: translateX(-83.33%); }
     100% { transform: translateX(-100%); }
 }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile>ul>li>a {
+    text-decoration: none;
+    list-style-type: none;
+    text-wrap: nowrap;
+}
+
+@media(max-width:800px){
+
+    .accountBtn {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+   
+}
