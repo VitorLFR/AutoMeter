@@ -1,0 +1,61 @@
+.detalhe-atualizarTurma {
+    padding: 4.6875vw;
+    font-size: 1.7vw;
+}
+
+.descricaoBox-atualizarTurma {
+    flex-direction: column !important;
+    align-items: flex-start;
+    font-size: 1.25vw;
+    padding-top: 1.7vw;
+    padding-bottom: 1vw;
+}
+
+.descricaoBox-atualizarTurma  >input{
+    border: none;
+    background-color: #1B1A1A;
+    border-bottom: 0.01vw #FFFFFF solid;
+    width: 20vw;
+    margin-top: 1%;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.detalhe-atualizarTurma-3 {
+    padding: 4.6875vw;
+    font-size: 1.7vw;
+}
+
+.descricaoBox-atualizarTurma-3 {
+    flex-direction: column !important;
+    align-items: flex-start;
+    font-size: 1.25vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.descricaoBox-atualizarTurma-3  >input{
+    border: none;
+    background-color: #1B1A1A;
+    border-bottom: 0.01vw #FFFFFF solid;
+    width: 20vw;
+    margin-top: 1%;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.configuracaoBox-atualizarTurma  > select{
+    width: 14.6875vw;
+    height: 2vw;
+    font-size: 1.2vw;
+}
+
+#texto-turno {
+    font-size: 1.25vw;
+}
+
+.atualizar-turno > #atuali-1 {
+    text-align: center;
+    font-size: 1.5625vw;
+    
+}

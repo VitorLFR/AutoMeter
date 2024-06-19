@@ -85,3 +85,11 @@ select>option{
     width: 10%;
     height: 2vw;
 }
+
+.points > h2{
+    font: 1.2vw;
+}
+
+.logoHome-areaturma> a > img {
+    width: 18vw;
+}

@@ -2,14 +2,14 @@
   <div class="cabeçalho-areaturma">
 
     <div class="logoHome-areaturma">
-      <img src="medias/images/Logo.svg" alt="" />
+      <a href="/"><img src="/medias/images/Logo.svg" alt="" /></a>
     </div>
 
     <div class="cabecalhoOp">
       <ul>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
-        <li><a href=""><img src="medias/images/signInIcon.svg" alt=""/></a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
       </ul>
     </div>
 
@@ -23,9 +23,10 @@
     <div class="menu-lateral-itens">
       <h2>Minha Conta</h2>
       <a href="#">Informações</a>
-      {{!-- <a href="#" id="p-color">Deletar conta</a> COMENTEI POIS NÃO FAZ SENTIDO O PRÓPRIO USUÁRIO CONSEGUIR DELETAR SUA PRÓPRIA CONTA NO NOSSO PROJETO --}}
     </div>
     
+    <a href="/sairConta">Sair da Conta</a>
+
     <div class="menu-lateral-itens2">
       <a id="p-voltar" href="/areadeacesso">VOLTAR</a>
     </div>
@@ -35,7 +36,7 @@
   <div class="informacoes">
 
     <div class="img-center">
-      <img src="medias/images/cunamata.svg" alt="" />
+      <img src={{imagem}} alt="" />
     </div>
 
     <p>Sobre você</p>
@@ -57,7 +58,7 @@
 
         <div class="colum-2">
           <p id="p1-conta">Criado por</p>
-          <p>Wilton Neves</p>
+          <p>Teste</p>
 
           <p id="p-conta">Criado em</p>
           <p>03/05/2024</p>
@@ -75,7 +76,7 @@
 
   <div class="footer-conta">
     <div class="img-footer">
-      <img src="medias/images/Logo.svg" alt="" />
+      <img src="/medias/images/Logo.svg" alt="" />
     </div>
 
     <p>@2024 direitos autorais de autometer</p>

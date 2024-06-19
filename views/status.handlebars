@@ -1,125 +1,174 @@
 <header>
-    <div class="cabeçalho-areaturma">
-
-        <div class="logoHome-areaturma">
-            <img src="/medias/images/Logo.svg" alt="" />
-        </div>
-
-        <div class="cabecalhoOp">
-            <ul>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="/conta"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
-            </ul>
-        </div>
-
+  <div class="cabeçalho-areaturma">
+    <div class="logoHome-areaturma">
+      <a href="/"><img src="/medias/images/Logo.svg" alt="" /></a>
     </div>
+    <div class="cabecalhoOp">
+      <ul>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
+      </ul>
+    </div>
+  </div>
 </header>
 
 <main class="contaMain">
+  <div class="menu-lateral">
+    <div class="menu-lateral-itens">
+      <h2>Status</h2>
+      {{#gte2 AcessLevel 2}}
+      <a href="/avaliacao.elogio/{{usuarioId}}">Elogios</a>
+      <a href="/avaliacao.ocorrencia/{{usuarioId}}">Ocorrências</a>
+      <a href="/status/{{usuarioId}}">Informações</a>
+      {{/gte2}}
+    </div>
+    <div class="menu-lateral-itens2">
+      <a id="p-voltar" href="/areadeacesso">VOLTAR</a>
+    </div>
+  </div>
 
-    <div class="menu-lateral">
+  <div class="informacoes">
+    <div class="img-center">
+      <img src="{{imagemUsuario}}" alt="" />
+    </div>        
+    <h2>{{nomeUsuario}} ({{tipoUsuario}})</h2>
 
-        <div class="menu-lateral-itens">
-            <h2>Status</h2>
-            <a href="/avaliacao.elogio">Elogios</a>
-            <a href="/avaliacao.ocorrencia">Ocorrências</a>
-        </div>
+    <h3>Email: {{emailUsuario}}</h3>
+    <div style="color: rgba(255, 255, 255, 0)">{{#lte AcessLevel 2}}</div>
+    <p class="informacoesText">Elogios ou Ocorrências</p>
+    {{/lte}}
 
-        <div class="menu-lateral-itens2">
-            <a id="p-voltar" href="#">VOLTAR</a>
-        </div>
+    <div class="container-conta" style="border: none;">
+      <table class="statusTable2">
+  <thead>
+    <tr>
+      <th>Configuração</th>
+      <th>Tipo</th>
+      <th>Responsável</th>
+      <th>Gravidade</th>
+      <th>Responsável</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each reclamacoes}}
+    <tr>
+      <td>Reclamação</td>
+      <td>{{tipo}}</td>
+      <td>{{reclamador}}</td>
+      <td>{{gravidade}}</td>
+      <td>{{reclamador}}</td>
+      <td>
+        <button class="descricaoBtn" style="color: red;" onclick="showModal('Reclamação', '{{tipo}}', '{{gravidade}}', '{{reclamador}}', '{{descricao}}')">VER</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+    <table class="statusTable2">
+  <thead>
+    <tr>
+      <th>Configuração</th>
+      <th>Tipo</th>
+      <th>Responsável</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each elogios}}
+    <tr>
+      <td>Elogio</td>
+      <td>Outros</td> <!-- Elogios são categorizados como "Outros" -->
+      <td>{{elogiador}}</td>
+      <td>
+        <button class="descricaoBtn" style="color: green;" onclick="showModal('Elogio', 'Outros', '', '{{elogiador}}', '{{descricao}}')">VER</button>
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
 
     </div>
-
-    <div class="informacoes">
-
-        <div class="img-center">
-            <img src="{{imagemAluno}}" alt="" />
-        </div>        
-
-        <h2>{{nomeAluno}}</h2>
-
-        <p class="informacoesText">Elogios ou Ocorrências</p>
-
-        <div class="container-conta" style="border: none;">
-
-            <div class="box-container-conta statusDisplay">
-
-                <div class="statusTable">
-
-                    <div id="statusConfig">
-                        <h1>Configuração</h1>
-
-                        <div class="linhaRedDiv">
-                            <span class="linhaRed"></span>
-                        </div>
-
-                        <div id="statusConfigItem">
-                            <h2>Testando</h2>
-                        </div>
-                    </div>
-                    <div id="statusGravidade">
-                        <h1>Gravidade</h1>
-
-                        <div class="linhaRedDiv">
-                            <span class="linhaRed"></span>
-                        </div>
-
-                        <div id="statusGravidadeItem">
-                            <h2>Testando</h2>
-                        </div>
-                    </div>
-                    <div id="statusTipo">
-                        <h1>Tipo</h1>
-
-                        <div class="linhaRedDiv">
-                            <span class="linhaRed"></span>
-                        </div>
-
-                        <div id="statusTipoItem">
-                            <h2>Testando</h2>
-                        </div>
-                    </div>
-                    <div id="statusResponsavel">
-                        <h1>Responsável</h1>
-
-                        <div class="linhaRedDiv">
-                            <span class="linhaRed"></span>
-                        </div>
-                        <div id="statusResponsavelItem">
-                            <h2>Testando</h2>
-                        </div>
-                    </div>
-                    <div id="statusDescricao">
-                        <h1>Descrição</h1>
-
-                        <div class="linhaRedDiv">
-                            <span class="linhaRed"></span>
-                        </div>
-
-                        <div id="statusDescricaoItem">
-                            <a href="#">VER</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
+  </div>
 </main>
 
+<!-- Modal -->
+<div id="descricaoModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h1 id="modalConfig"></h1>
+    <p><strong>Tipo:</strong> <span id="modalTipo"></span></p>
+    <p><strong>Gravidade:</strong> <span id="modalGravidade"></span></p>
+    <p><strong>Responsável:</strong> <span id="modalResponsavel"></span></p>
+    <p><strong>Descrição:</strong> <span id="modalDescricao"></span></p>
+  </div>
+</div>
+
 <footer class="quarta-sessao">
-
-    <div class="footer-conta">
-        <div class="img-footer">
-            <img src="/medias/images/Logo.svg" alt="" />
-        </div>
-
-        <p>@2024 direitos autorais de autometer</p>
-        <p>voltar para o inicio ^</p>
+  <div class="footer-conta">
+    <div class="img-footer">
+      <img src="/medias/images/Logo.svg" alt="" />
     </div>
-
+    <p>@2024 direitos autorais de autometer</p>
+    <p>voltar para o inicio ^</p>
+  </div>
 </footer>
+
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+
+<script>
+  function showModal(config, tipo, gravidade, responsavel, descricao) {
+    document.getElementById('modalConfig').innerText = config;
+    document.getElementById('modalTipo').innerText = tipo;
+    document.getElementById('modalGravidade').innerText = gravidade;
+    document.getElementById('modalResponsavel').innerText = responsavel;
+    document.getElementById('modalDescricao').innerText = descricao;
+    document.getElementById('descricaoModal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('descricaoModal').style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    if (event.target == document.getElementById('descricaoModal')) {
+      closeModal();
+    }
+  }
+</script>

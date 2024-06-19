@@ -1,0 +1,178 @@
+.deletar-usuario {
+    color: white;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-deletar > p {
+    font-size: 1.953125vw;
+}
+
+.info-deletar {
+    margin-bottom: 3.90625vw;
+    margin-top: 2.34375vw;
+    width: 70%;
+}   
+
+.button-deletar {
+    margin-top: 1.5625vw;
+    width: 12.8125vw;
+    height: 2.578125vw;
+    background-color: #561C24;
+    color: white;
+    border-radius: 0.78125vw;
+    font-size: 1.5vw;
+}
+
+.button-deletar:hover {
+    background-color: rgb(138, 9, 9);
+}
+
+.info-deletar2{
+    width: 25%;
+    border: 0.15625vw solid black;
+    text-align: center;
+    margin-top: 3.90625vw;
+}
+
+.atencao > p {
+    color: red;
+    font-size: 1.5625vw;
+    margin-bottom: 3.90625vw;
+}
+
+.atencao-info {
+    margin-bottom: 6.25vw;
+}
+
+.atencao-info > p {
+    font-size: 1.25vw;
+}
+
+.icon-deletar > img {
+    width: 5.625vw;
+}
+
+.retorno {
+    margin-bottom: 6.25vw;
+    text-align: center;
+    margin-top: 3.90625vw;
+}
+
+.retorno > a {
+    color: white;
+    font-size: 2vw;
+    text-decoration: none;
+}
+
+.retorno > a:hover {
+    color: rgb(138, 9, 9);
+    cursor: pointer;
+}
+
+.formDelete > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* mobile aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+@media screen and (max-width: 600px) {
+
+    .cabecalhoOp a{
+        margin-left: 12px;
+        font-size: 5px;
+    }
+
+    .usuario{
+        width: 50px;
+    }
+
+    .deletar-usuario {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .info-deletar {
+        width: 100%;
+        text-align: center;
+    }
+
+   .descricaoBox-registro > input{
+    width: 300px;
+    height: 25px;
+    border-radius: 3px;
+    font-size: 15px;
+   }
+
+   .descricaoBox-registro p{
+    font-size: 12px;
+   }
+
+    .completo-deletar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricaoBox-registro {
+        margin-bottom: 2vw;
+    }
+
+    .button-deletar {
+        width: 30%;
+        height: 6%;
+        font-size: 12px;
+        border-radius: 6px;
+        margin-left: 99px;
+    }
+
+    .button-deletar-user {
+    padding-left: 0;
+    }
+
+    .info-deletar2 {
+        width: 90%;
+        margin-top: 5vw;
+    }
+
+    .info-deletar p{
+        font-size: 12px;
+    }
+
+    .atencao > p {
+        font-size: 4vw;
+        margin-bottom: 5vw;
+        margin-left: 4%;
+    }
+
+    .atencao-info {
+        margin-bottom: 8vw;
+
+    }
+
+    .atencao-info > p {
+        font-size: 3vw;
+        margin-left: 4%;
+
+    }
+
+    .icon-deletar  img {
+        width: 15vw;
+        margin: 0 auto;
+        margin-left: 4%;
+    }
+
+    .retorno {
+        margin-bottom: 17vh;
+    }
+
+    .retorno > a {
+        font-size: 5vw;
+        margin-top: 5vw;
+        margin-right: 6%;
+    }
+}

@@ -2,14 +2,14 @@
     <div class="cabeçalho-areaturma">
 
         <div class="logoHome-areaturma">
-            <img src="medias/images/Logo.svg" alt="" />
+            <a href="/"><img src="/medias/images/Logo.svg" alt="" /></a>
         </div>
 
         <div class="cabecalhoOp">
             <ul>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="/conta"><img src="medias/images/signInIcon.svg" alt="" /></a></li>
+                <li><a href="/conta/{{userId}}"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
             </ul>
         </div>
 
@@ -23,74 +23,75 @@
     <section class="userMain">
         <h1>Bem Vindo, {{nomeUsuario}}!</h1>
 
-        <div>
+        <div style="margin-bottom: 5%;">
             <img alt="" src={{imagemUsuario}}>
         </div>
 
+        {{#equal AcessLevel 1}}
         <div class="statusTable userTable">
-
-                    <div id="statusEstudante">
-                        <h1>Estudante</h1>
-
-                        <div id="statusConfigItem">
-                            <h2>{{nomeUsuario}}</h2>
-                        </div>
-                    </div>
-                    <div id="statusTurma">
-                        <h1>Turma</h1>
-
-                        <div id="statusGravidadeItem">
-                            <h2>{{nomeTurma}}</h2>
-                        </div>
-                    </div>
-                    <div id="statusProfessor">
-                        <h1>Professor</h1>
-
-                        <div id="statusTipoItem">
-                            <h2>{{nomeProfessor}}</h2>
-                        </div>
-                    </div>
-                    <div id="statusRanking">
-                        <h1>Ranking</h1>
-
-                        <div id="statusResponsavelItem">
-                            <h2>Testando</h2>
-                        </div>
-                    </div>
+            <div id="statusEstudante">
+                <h1>Estudante</h1>
+                <div id="statusConfigItem">
+                    <h2>{{nomeUsuario}}</h2>
+                </div>
+            </div>
+            <div id="statusTurma">
+                <h1>Turma</h1>
+                <div id="statusGravidadeItem">
+                    <h2>{{nomeTurma}}</h2>
+                </div>
+            </div>
+            <div id="statusProfessor">
+                <h1>Professor</h1>
+                <div id="statusTipoItem">
+                    <h2>{{nomeProfessor}}</h2>
+                </div>
+            </div>
+            <div id="statusRanking">
+                <h1>Ranking</h1>
+                <div id="statusResponsavelItem">
+                    <h2>#{{posicao}}</h2>
+                </div>
+            </div>
         </div>
+        {{/equal}}
+
 
         <div class="userOptions">
             <div class="boxOption">
                 <div class="option">
-                    <img src="medias/images/deslike.svg" alt="">
-                    <a href="#">VER MINHAS RECLAMAÇÕES</a>
-                </div>
-            </div>    
-            <div class="boxOption">
-                <div class="option">
-                    <img src="medias/images/like.svg" alt="">
-                    <a href="#">VER MEUS ELOGIOS</a>
+                    <img src="/medias/images/deslike.svg" alt="">
+                    <a href="/status/{{userId}}">VER MINHAS RECLAMAÇÕES</a>
                 </div>
             </div>
             <div class="boxOption">
                 <div class="option">
-                    <a href="/gerencimentoEscolar"><img src="medias/images/gerenciamentoEscolar.svg" alt=""></a>
-                    <a href="/gerencimentoEscolar">GERENCIAMENTO ESCOLAR</a>
+                    <img src="/medias/images/like.svg" alt="">
+                    <a href="/status/{{userId}}">VER MEUS ELOGIOS</a>
                 </div>
             </div>
+            {{#if (gte AcessLevel 2) }}
+            <div class="boxOption">
+                <div class="option">
+                    <a href="/gerenciamentoEscolar"><img src="medias/images/gerenciamentoEscolar.svg" alt=""></a>
+                    <a href="/gerenciamentoEscolar">GERENCIAMENTO ESCOLAR</a>
+                </div>
+            </div>
+            {{/if}}
+
         </div>
     </section>
 </main>
 
 <footer class="quarta-sessao">
 
-  <div class="footer">
-    <div class="img-footer">
-      <img src="medias/images/Logo.svg" alt="" />
+    <div class="footer">
+        <div class="img-footer">
+            <img src="/medias/images/Logo.svg" alt="" />
+        </div>
+
+        <p>@2024 direitos autorais de autometer</p>
+        <p>voltar para o inicio ^</p>
     </div>
-    
-     <p>@2024 direitos autorais de autometer</p>
-     <p>voltar para o inicio ^</p>
-  </div>
 
 </footer>

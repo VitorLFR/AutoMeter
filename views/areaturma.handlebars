@@ -2,14 +2,14 @@
   <div class="cabeçalho-areaturma">
 
     <div class="logoHome-areaturma">
-      <img src="medias/images/Logo.svg" alt="" />
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
     </div>
 
     <div class="cabecalhoOp">
       <ul>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
-        <li><a href="/conta"><img src="medias/images/signInIcon.svg" alt="" /></a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
       </ul>
     </div>
 
@@ -19,7 +19,7 @@
 <section class="area">
 
   <div class="primeira-sessao">
-    <a href="">Voltar</a>
+    <a href="/gerenciamentoEscolar">Voltar</a>
   </div>
 
   <div class="segunda-sessao">
@@ -50,6 +50,19 @@
     </div>
   </div>
   {{/each}}
+</section>
+
+<section class="addStudents" style="display: flex; justify-content: center;">
+  <div class="card-gerenciamento">
+
+        <img src="/medias/images/student.svg" alt=""/>
+        
+        <div class="descricao-gerenciamento">
+            <a href="/adicionarTurma">
+              <p>Adicionar Estudante em Turma</p>
+            </a>
+        </div>
+    </div>
 </section>
 
 <footer class="quarta-sessao">

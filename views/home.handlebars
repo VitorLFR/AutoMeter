@@ -1,4 +1,4 @@
-<header>
+  <header id="he1">
   <div class="cabeçalho">
     <ul>
       <li><a href="#">Parceiros</a></li>
@@ -6,7 +6,7 @@
     </ul>
 
     <div class="logoHome">
-      <img src="medias/images/Logo.svg" alt=""/>
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
     </div>
 
     <ul>
@@ -24,6 +24,46 @@
       </ul>
     <div/>
 
+    <header>
+  <div class="cabeçalho">
+
+    <ul>
+      <li><a href="#">Parceiros</a></li>
+      <li><a href="#">Ranking</a></li>
+    </ul>
+
+    <div class="logoHome">
+      <img src="medias/images/Logo.svg" alt="" />
+    </div>
+
+
+    <ul>
+      <li><a href="#">O que fazemos?</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+
+  </div>
+  <div class="logom">
+    <img src="medias/images/logo.png" alt="">
+  </div>
+
+  <div class="menuhb">
+    <img src="medias/images/menuimg.png" alt="" width="120%" height="30%">
+  </div>
+
+  <div class="accountBtn">
+    <img src="medias/images/signInIcon.svg" alt="" />
+  </div>
+
+  <div class="person">
+    <img src="medias/images/personloginmoba.png" alt="">
+  </div>
+
+</header>
+
+<header></header>
+
+
     </div class="hamburger">
 
       <span class="bar"></span>
@@ -35,7 +75,7 @@
   </div>
 
   <div class="accountBtn">
-    <a href="/login"><img src="medias/images/signInIcon.svg" alt="" /></a>
+    <a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a>
   </div>
 
 </header>
@@ -50,7 +90,7 @@
       </div>
   
       <div class="descButton">
-        <a href="#">Área de Acesso</a>
+        <a href="/areadeacesso">Área de Acesso</a>
       </div>
     </div>
   
@@ -68,7 +108,7 @@
         </div>
   
         <div>
-          <a href="#" style="text-decoration: none;">Entre em contato</a>
+          <a href="#" style="text-decoration: none;" id="btnHelp">Entre em contato</a>
         </div>
   
       </div>
@@ -107,165 +147,62 @@
       </div>
     </div>
   
-    <div class="RankingGeral">
-      <div class="ranking">
-        <div class="rankingTop">
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top1">
-                <p>1</p>
-              </div>
-            </div>
+<div class="RankingGeral">
+  <div class="ranking">
+    <div class="rankingTop">
+      {{#each topAlunosTop5}}
+        <div class="top">
+          <div class="rankPhoto">
+            <img src={{this.imagemUsuario}} alt="" />
           </div>
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
+          <div class="rankUser">
+            <div class="rankUserInfo">
+              <h1>{{this.nomeUsuario}}</h1>
+              <p>{{this.pontos}} pontos</p>
             </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top2">
-                <p>2</p>
-              </div>
-            </div>
-          </div>
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top3">
-                <p>3</p>
-              </div>
-            </div>
-          </div>
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top4">
-                <p>4</p>
-              </div>
-            </div>
-          </div>
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top5">
-                <p>5</p>
-              </div>
+            <div class="rankUserPosition" id="top{{this.posicao}}">
+              <p>{{this.posicao}}</p>
             </div>
           </div>
         </div>
-        <div class="rankingTop">
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top6">
-                <p>6</p>
-              </div>
-            </div>
-          </div>
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top7">
-                <p>7</p>
-              </div>
-            </div>
-          </div>
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top8">
-                <p>8</p>
-              </div>
-            </div>
-          </div>
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top9">
-                <p>9</p>
-              </div>
-            </div>
-          </div>
-          <div class="top">
-            <div class="rankPhoto">
-              <img src="medias/images/perfiltest.svg" alt="" />
-            </div>
-            <div class="rankUser">
-              <div class="rankUserInfo">
-                <h1>NomeDoUsuario</h1>
-                <p>000 points</p>
-              </div>
-              <div class="rankUserPosition" id="top10">
-                <p>10</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div class="schoolInfo">
-        <div class="schoolLogo">
-          <img src="medias/images/logoSenai.svg" alt="" />
-        </div>
-        <div class="studentInfo">
-          <img src="medias/images/fundo branco.svg" alt="" />
-          <h1>Rank Dele</h1>
-          <p>#032</p>
-        </div>
-      </div>
+      {{/each}}
     </div>
+
+    {{#if (gte (length topAlunosTop6To10) 1)}}
+      <div class="rankingTop">
+        {{#each topAlunosTop6To10}}
+          <div class="top">
+            <div class="rankPhoto">
+              <img src="medias/images/perfiltest.svg" alt="" />
+            </div>
+            <div class="rankUser">
+              <div class="rankUserInfo">
+                <h1>{{this.nomeUsuario}}</h1>
+                <p>{{this.pontos}} pontos</p>
+              </div>
+              <div class="rankUserPosition" id="top{{this.posicao}}">
+                <p>{{this.posicao}}</p>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    {{/if}}
+  </div>
+
+  <div class="schoolInfo">
+    <div class="schoolLogo">
+      <img src="medias/images/logoSenai.svg" alt="" />
+    </div>
+    <div class="studentInfo">
+      {{#each userInfo}}
+      <img src={{this.imagem}} alt="" />
+      <h1>{{this.nome}}</h1>
+      <p>#{{../posicao.0.posicao}}</p>
+      {{/each}}
+    </div>
+  </div>
+</div>
   
     <div class="rankVerTudo">
       <a href="#">VER TUDO</a>

@@ -2,6 +2,7 @@
   background-image: url("/medias/images/Fundo_login.svg") !important;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 
 .logo_login {
@@ -60,8 +61,9 @@
 }
 
 .form-user > label {
-  font-size: 1.7vw;
-  padding-left: 2.3vw;
+  font-size: 1.6vw;
+  margin-left: 2.7vw;
+  font-weight: 300;
 }
 
 .form-user2 {
@@ -71,16 +73,18 @@
 }
 
 .form-user2 > label {
-  font-size: 1.7vw;
-  padding-left: 2.3vw;
+  font-size: 1.6vw;
+  margin-left: 2.7vw;
+  font-weight: 300;
 }
 
 .form-control {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  border-bottom: 0.15625vw solid #000;
+  background-color: rgba(90, 88, 88, 0.466);
+  border-radius: 1vw;
+  border: 0.15625vw solid #000;
   width: 80%;
   margin: 0 auto;
+  font-size: 1.25vw;
 }
 
 .botao {
@@ -106,3 +110,87 @@
   padding-top: 5%;
   margin-top: 2vw;
 }
+
+/* mobile aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+@media (max-width: 600px) {
+
+  .man_img img{
+    width: 40%;
+  }
+
+  .loginLogo {
+    width: 60% !important;
+    margin-bottom: 15vh;
+    }
+
+  .logo_login img{
+    /* width: 40vw; */
+    width: 100%;
+  }
+    
+
+  .card_login {
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: none;
+    background: none;
+  }
+
+  .man_img {
+    display: none; /* Oculta a imagem no layout mobile */
+  }
+
+  .forms_login {
+    width: 100%;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-bottom: 25vh;
+  }
+
+  .forms_login > p {
+    padding-left: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    
+  }
+
+  .form-user,
+  .form-user2 {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .form-user > label,
+  .form-user2 > label {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .form-control {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    font-size: 16px;
+  }
+
+  .botao {
+    padding: 1px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .button-login {
+    width: 50%;
+    height: 35px;
+    font-size: 18px;
+    margin: 0 auto;
+    border-radius: 20px;
+  }
+}
+
+
+  

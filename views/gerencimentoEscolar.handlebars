@@ -2,14 +2,14 @@
   <div class="cabeçalho-areaturma">
 
     <div class="logoHome-areaturma">
-      <img src="medias/images/Logo.svg" alt="" />
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
     </div>
 
     <div class="cabecalhoOp">
       <ul>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
-        <li><a href="/conta"><img src="medias/images/signInIcon.svg" alt="" /></a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
       </ul>
     </div>
 
@@ -40,8 +40,10 @@
         <img src="/medias/images/professor.svg" alt=""/>
         
         <div class="descricao-gerenciamento">
-            <p>ÁREA DA</p>
-            <p>TURMA</p>
+            <a href="/areaturma" style="none">
+              <p>ÁREA DA</p>
+              <p>TURMA</p>
+            </a>
         </div>
     </div>
 
@@ -50,30 +52,96 @@
         <img src="/medias/images/student.svg" alt=""/>
         
         <div class="descricao-gerenciamento">
-            <p>ÁREA DA</p>
-            <p>TURMA</p>
+            <a href="/criarTurma">
+              <p>CRIAR</p>
+              <p>TURMA</p>
+            </a>
         </div>
     </div>
 
+    {{#gte2 AcessLevel 3}}
     <div class="card-gerenciamento">
 
         <img src="/medias/images/diretor.svg" alt=""/>
         
         <div class="descricao-gerenciamento">
-            <p>ÁREA DA</p>
-            <p>TURMA</p>
+            <a href="/infoFuncionarios">
+              <p>ÁREA DOS</p>
+              <p>FUNCIONÁRIOS</p>
+            </a>
         </div>
     </div>
+    {{/gte2}}  
 
+    {{#gte2 AcessLevel 3}}
     <div class="card-gerenciamento">
 
         <img src="/medias/images/usuario.svg" alt=""/>
         
         <div class="descricao-gerenciamento">
-            <p>ÁREA DA</p>
-            <p>TURMA</p>
+            <a href="/registro">
+              <p>CADASTRAR</p>
+              <p>USUÁRIOS</p>
+            </a>
         </div>
     </div>
+    {{/gte2}}
+
+    {{#gte2 AcessLevel 3}}
+    <div class="card-gerenciamento">
+
+        <img src="/medias/images/updateUser.svg" alt=""/>
+        
+        <div class="descricao-gerenciamento">
+            <a href="/atualizarUser">
+              <p>ATUALIZAR</p>
+              <p>USUÁRIOS</p>
+            </a>
+        </div>
+    </div>
+    {{/gte2}}
+
+    {{#gte2 AcessLevel 3}}
+    <div class="card-gerenciamento">
+
+        <img src="/medias/images/deleteUser.svg" alt=""/>
+        
+        <div class="descricao-gerenciamento">
+            <a href="/deletarUser">
+              <p>DELETAR</p>
+              <p>USUÁRIO</p>
+            </a>
+        </div>
+    </div>
+    {{/gte2}}
+
+    {{#gte2 AcessLevel 3}}
+    <div class="card-gerenciamento">
+
+        <img src="/medias/images/deleteTurma.svg" alt=""/>
+        
+        <div class="descricao-gerenciamento">
+            <a href="/deletarTurma">
+              <p>DELETAR</p>
+              <p>TURMA</p>
+            </a>
+        </div>
+    </div>
+    {{/gte2}}
+
+    {{#gte2 AcessLevel 3}}
+    <div class="card-gerenciamento">
+
+        <img src="/medias/images/updateTurma.svg" alt=""/>
+        
+        <div class="descricao-gerenciamento">
+            <a href="/atualizarTurma">
+              <p>ATUALIZAR</p>
+              <p>TURMA</p>
+            </a>
+        </div>
+    </div>
+    {{/gte2}}
 
   </section>
 

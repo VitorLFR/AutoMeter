@@ -1,0 +1,396 @@
+<header>
+  <div class="cabeçalho-areaturma">
+
+    <div class="logoHome-areaturma">
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
+    </div>
+
+    <div class="cabecalhoOp">
+      <ul>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+<main class="atualizar-user">
+
+  <div class="titulo-atualizar">
+    <p>Detalhes da Turma</p>
+  </div>
+
+  <section class="atualizar-1">
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR NOME</p>
+
+      <form action="/atualizarNomeTurma" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome: </p>
+              <select name="nome" id="">
+                {{#each listaTurma}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Novo Nome : </p>
+              <input
+                type="text"
+                name="novoNome"
+                placeholder="Escreva o novo nome..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Nome</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-turno">
+
+      <p id="atuali-1">ATUALIZAR TURNO</p>
+
+      <form action="/atualizarTurnoTurma" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-atualizarTurma">
+              <p>Nome: </p>
+              <select name="nome" id="">
+                {{#each listaTurma}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div>
+              <p id="texto-turno">Novo Turno: </p>
+              <div class="configuracaoBox-registro">
+                <select name="novoTurno">
+                  <option value="Turno">Turno</option>
+                  <option value="Manhã">Manhã</option>
+                  <option value="Tarde">Tarde</option>
+                  <option value="Noite">Noite</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Turno</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR MATÉRIA</p>
+
+      <form action="/atualizarMateriaTurma" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome : </p>
+              <select name="nome" id="">
+                {{#each listaTurma}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Nova Matéria : </p>
+              <input
+                type="text"
+                name="novaMateria"
+                placeholder="Escreva a nova matéria..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Matéria</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="atualizar-1">
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR SALA</p>
+
+      <form action="/atualizarSalaTurma" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome: </p>
+              <select name="nome" id="">
+                {{#each listaTurma}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Nova Sala : </p>
+              <input
+                type="text"
+                name="novaSala"
+                placeholder="Escreva nova senha..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Senha</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR CAPACIDADE</p>
+
+      <form action="/atualizarCapacidadeTurma" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome : </p>
+              <select name="nome" id="">
+                {{#each listaTurma}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Capacidade : </p>
+              <input
+                type="number"
+                name="novaCapacidade"
+                placeholder="Capacidade de pessoass..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Capacidade</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR INÍCIO</p>
+
+      <form action="/atualizarInicioTurma" method="post">
+
+        <div>
+
+          <div>
+            <div class="descricaoBox-registro">
+              <p>Nome : </p>
+              <select name="nome" id="">
+                {{#each listaTurma}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Nova Início : </p>
+              <input
+                type="date"
+                name="novoInicio"
+                placeholder="Escreva a nova matéria..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Início</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+<section class="atualizar-1">
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR TÉRMINO</p>
+
+      <form action="/atualizarTerminoTurma" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome: </p>
+              <select name="nome" id="">
+                {{#each listaTurma}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Nova Término : </p>
+              <input
+                type="date"
+                name="novoTermino"
+                placeholder="Escreva nova senha..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Término</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR PROFESSOR</p>
+
+      <form action="/atualizarProfessorTurma" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-atualizarTurma-3">
+              <p>Nome : </p>
+              <select name="nome" id="">
+                {{#each listaTurma}}
+                <option value="{{this.nome}}">{{this.nome}}</option>
+                {{/each}}
+              </select>
+            </div>
+
+            <div>
+              <p id="texto-turno">Novo Professor: </p>
+              <div class="configuracaoBox-registro">
+                <select name="novoProfessor">
+                  {{#each listaProfessores}}
+                  <option value="{{this.nome}}">{{this.nome}}</option>
+                  {{/each}}
+                </select>
+              </div>
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Professor</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR IMAGEM</p>
+
+        <form action="/atualizarImagemTurma" method="post">
+
+          <div>
+
+            <div>
+              <div class="descricaoBox-registro">
+                <p>Nome : </p>
+                <select name="nome" id="">
+                  {{#each listaTurma}}
+                  <option value="{{this.nome}}">{{this.nome}}</option>
+                  {{/each}}
+                </select>
+              </div>
+
+              <div class="descricaoBox-registro">
+                <p>Imagem : </p>
+                <input type="text" name="novaImagem" placeholder="Url da imagem..." />
+              </div>
+    
+              <div class="botao-atualizar">
+                <button class="button-adicionar" type="submit">Atualizar
+                  Imagem</button>
+              </div>
+            </div>
+
+          </div>
+        </form>
+    </div>
+
+  </section>
+
+  <div class="retorno">
+
+    <a href="/gerenciamentoEscolar">Voltar</a>
+
+  </div>
+
+</main>
+
+<footer class="quarta-sessao">
+
+  <div class="footer-conta">
+    <div class="img-footer">
+      <img src="medias/images/Logo.svg" alt="" />
+    </div>
+
+    <p>@2024 direitos autorais de autometer</p>
+    <p>voltar para o inicio ^</p>
+  </div>
+
+</footer>

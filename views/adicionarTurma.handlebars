@@ -1,0 +1,63 @@
+<header>
+  <div class="cabeçalho-areaturma">
+
+    <div class="logoHome-areaturma">
+      <a href="/"><img src="/medias/images/Logo.svg" alt="" /></a>
+    </div>
+
+    <div class="cabecalhoOp">
+      <ul>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+<main class="adicionar-turma">
+
+  <section class="sair-adicionar">
+    <a href="/areaturma">Voltar</a>
+  </section>
+
+  <section class="adicionar-pai">
+    <div class="adicionar-info">
+      <p>Adicionar Aluno na <br /> Turma</p>
+    </div>
+
+    <div class="input-adicionar">
+      <form action="/alunoTurma" method="post">
+        <div class="descricaoBox-registro">
+          <p>Email do Aluno : </p>
+          <input type="text" name="email" id="" />
+        </div>
+        <p id="adicionar-1">Nome da Turma : </p>
+        <select name="Turma">
+          {{#each listaTurma}}
+          <option value="{{this.nome}}">{{this.nome}}</option>
+          {{/each}}
+        </select>
+
+        <div class="button-adicionar-user">
+          <button class="button-adicionar" type="submit">ADICIONAR</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="quarta-sessao">
+
+  <div class="footer-conta">
+    <div class="img-footer">
+      <img src="medias/images/Logo.svg" alt="" />
+    </div>
+
+    <p>@2024 direitos autorais de autometer</p>
+    <p>voltar para o inicio ^</p>
+  </div>
+
+</footer>

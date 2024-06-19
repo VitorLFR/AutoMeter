@@ -1,15 +1,15 @@
-<header>
+  <header>
   <div class="cabeçalho-areaturma">
 
     <div class="logoHome-areaturma">
-      <img src="medias/images/Logo.svg" alt="" />
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
     </div>
 
     <div class="cabecalhoOp">
       <ul>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
-        <li><a href="/conta"><img src="medias/images/signInIcon.svg" alt="" /></a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
       </ul>
     </div>
 
@@ -17,6 +17,12 @@
 </header>
 
 <main class="main-registro">
+
+  <div class="primeira-sessao">
+
+      <a href="/gerenciamentoEscolar">Voltar</a>
+
+    </div>
 
   <section class="detalhe-registro">
 
@@ -29,51 +35,71 @@
   <section class="info-registro">
 
     <div class="completo">
-      <div class="descricaoBox-registro">
-        <p>*Nome Completo : </p>
-        <input type="text" placeholder="Escreva seu nome..." />
-      </div>
-      <div>
-        <div class="configuracaoBox-registro">
-          <select name="nivel-acesso">
-            <option value="Nível de acesso">Nível de acesso</option>
-            <option value="Administrativo Total">Administrativo Total</option>
-            <option value="Acesso Pedagógico Avançado">Acesso Pedagógico
-              Avançado</option>
-            <option value="Acesso Pedagógico">Acesso Pedagógico</option>
-            <option value="Acesso Básico">Acesso Básico</option>
-          </select>
+
+      <form action="/registro" method="post">
+        <div class="descricaoBox-registro">
+          <p>*Nome Completo : </p>
+          <input type="text" name="nome" id="" />
         </div>
-      </div>
+        <div>
+          <div class="configuracaoBox-registro">
+            <select name="nivelacesso">
+              <option value="Nível de acesso">Nível de acesso</option>
+              <option value="Acesso Básico">Acesso Básico</option>
+              {{#if (gte AcessLevel 3)}}
+              <option value="Acesso Pedagógico">Acesso Pedagógico</option>
+              {{/if}}
+              {{#if (gte AcessLevel 4)}}
+              <option value="Acesso Pedagógico Avançado">Acesso Pedagógico Avançado</option>
+              {{/if}}              
+            </select>
+          </div>
+        </div>
     </div>
 
     <div class="registro-email">
       <div class="descricaoBox-registro">
         <p>*Email : </p>
-        <input type="text" placeholder="Escreva seu email..." />
+        <input type="text" name="email" />
+      </div>
+    </div>
+
+    <div class="registro-imagem">
+      <div class="descricaoBox-registro">
+        <p>*Imagem : </p>
+        <input type="text" name="imagem" />
       </div>
     </div>
 
     <div class="completo">
       <div class="descricaoBox-registro">
         <p>*Senha : </p>
-        <input type="text" placeholder="Escreva sua senha..." />
+        <input type="text" name="senha" />
       </div>
       <div>
         <div class="configuracaoBox-registro">
           <select name="tipo">
             <option value="Tipo">Tipo</option>
-            <option value="Mal comportamento">Estudante</option>
-            <option value="Violência">Funcionários </option>
-            <option value="Violência">Outros</option>
+            <option value="Estudante">Estudante</option>
+            {{#if (gte AcessLevel 3)}}
+            <option value="Professor">Professor</option>
+            <option value="Secretaria">Secretaria</option>
+            <option value="Limpeza">Limpeza</option>
+            <option value="Outro">Outro</option>
+            {{/if}}
+            {{#equal AcessLevel 4}}
+            <option value="Coordenador">Coordenador</option>
+            {{/equal}}
           </select>
         </div>
       </div>
     </div>
 
     <div class="botao-registro">
-      <button class="button-login-registro" type="submit">Enviar </button>
+      <button class="button-adicionar" style="margin-bottom: 5%;" type="submit">Enviar </button>
     </div>
+
+    </form>
 
   </section>
 

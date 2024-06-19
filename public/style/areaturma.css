@@ -1,4 +1,4 @@
-.logoHome-areaturma > img {
+.logoHome-areaturma > a > img {
   width: 14.609375vw;
 }
 
@@ -154,4 +154,79 @@
 
 .img-footer > img {
   width: 14.609375vw;
+}
+
+/* mobile aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+@media only screen and (max-width: 600px) {
+
+  .menuS{
+    display: block;
+    
+  }
+
+  .logoHome-areaturma > img {
+    width: 40%;
+  }
+
+  .cabecalhoOp > ul {
+    font-size: 3vw;
+  }
+
+  .cabecalhoOp > ul > li {
+    margin-top: 2%;
+  }
+
+  .cabecalhoOp > ul > li > a {
+    font-size: 2.5vw;
+  }
+
+  .primeira-sessao {
+    padding: 10vw;
+  }
+
+  .primeira-sessao > p {
+    font-size: 4vw;
+  }
+
+  #p-1 {
+    font-size: 5vw;
+  }
+
+  #p-2 {
+    font-size: 3vw;
+    margin-top: 5vw;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+    margin-top: 15vw;
+  }
+
+  .card {
+    width: 45%;
+    margin-bottom: 5vw;
+  }
+
+  .card p {
+    padding: 1vw;
+  }
+
+  .footer {
+    flex-direction: column;
+    height: auto;
+    margin-top: 10vw;
+  }
+
+  .footer > p {
+    font-size: 4vw;
+  }
+
+  .img-footer > img {
+    justify-content: center;
+    display: flex;
+  }
+
+/* precisa arruma o menu sanduiche */
+
+
 }

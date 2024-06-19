@@ -1,0 +1,121 @@
+.atualizar-user {
+    color: white;
+}
+
+.titulo-atualizar {
+    text-align: center;
+    margin-top: 3.90625vw;
+}
+
+.titulo-atualizar > p {
+    font-size: 1.953125vw;
+}
+
+.atualizar-1, .atualizar-2 {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 3.90625vw;
+}
+
+.atualizar-2 {
+    margin-bottom: 100px;
+}
+
+.atualizar-nome {
+    width: 24%;
+}
+
+.atualizar-nome > #atuali-1 {
+    text-align: center;
+    font-size: 1.5625vw;
+    margin-bottom: 0.78125vw;
+}
+
+.atualizar-email {
+    width: 24%;
+}
+
+.atualizar-email > #atuali-1 {
+    text-align: center;
+    font-size: 1.5625vw;
+    margin-bottom: 0.78125vw;
+}
+
+.atualizar-senha {
+    width: 24%;
+}
+
+.atualizar-senha > #atuali-1 {
+    text-align: center;
+    font-size: 1.5625vw;
+    margin-bottom: 0.78125vw;
+}
+
+
+.button-login-atualizar {
+    margin-top: 1.5625vw;
+    width: 14.8125vw;
+    height: 2.578125vw;
+    background-color: #561C24;
+    color: white;
+    border-radius: 0.78125vw;
+    font-size: 1.5vw;
+}
+
+.button-login-atualizar:hover {
+    background-color: rgb(122, 11, 11);
+}
+
+.info-deletar2-atualizarUser{
+    width: 25%;
+    height: 22vw;
+    border: 0.2vw solid black;
+    text-align: center;
+}
+
+.atencao-atualizarUser > p {
+    color: red;
+    font-size: 1.5625vw;
+    margin-bottom: 3vw;
+}
+
+.atencao-info-atualizarUser {
+    margin-bottom: 6.25vw;
+    width: 90%;
+}
+
+.atencao-info-atualizarUser > p {
+    font-size: 1.25vw;
+    padding-left: 2vw;
+}
+
+.voltar-atulizar {
+    text-decoration: none;
+}
+
+.atualizar-1 > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.atualizar-2 > div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icon-deletar > img{
+    width: 5vw;
+}
+
+
+@media screen and (max-width: 450px){
+
+    
+}

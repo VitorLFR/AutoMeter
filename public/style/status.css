@@ -98,3 +98,69 @@
 .img-center>img{
     height: 100%;
 }
+
+.statusTable2 {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .statusTable2 th, .statusTable2 td {
+    padding: 0.5208333333333334vw;
+    text-align: left;
+    background-color: #202020;
+    color: #fff;
+    text-align: center;
+  }
+
+  .statusTable2 td{
+    border-left: 0.06510416666666667vw solid #dddddd1b;
+    border-right: 0.06510416666666667vw solid #dddddd1b;
+  }
+
+  .statusTable2 th:nth-child(even), .statusTable2 td:nth-child(even) {
+    background-color: #1B1A1A;
+  }
+
+
+   @media screen   and (max-width:450px) {
+    footer{
+        display: flex;
+        margin-top: 30%;
+    }
+
+    .informacoes{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+    }
+
+    .container-conta{
+        position: relative;
+        display: flex;
+        width: -200px;
+        height: -600px;
+    }
+
+
+    .statusTable{
+        display: flex;
+
+    
+        flex-direction: column;
+        align-items: center;
+        
+        flex-wrap: wrap;
+    }
+
+
+
+    .img-center{
+        height: 400px;
+        width: 100px;
+        display: flex;
+    }
+    
+}

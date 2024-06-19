@@ -1,0 +1,80 @@
+.adicionar-turma {
+    color: white;
+}   
+
+.sair-adicionar {
+    margin-top: 3.90625vw;
+}
+
+.sair-adicionar > a {
+    padding: 4.6875vw;
+    color: white;
+    font-size: 1.7vw;
+    text-decoration: none;
+}
+
+.sair-adicionar > a:hover {
+    color: rgb(123, 10, 10);
+}
+
+.adicionar-info {
+    font-size: 1.875vw;
+    text-align: center;
+}
+
+.adicionar-pai {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#adicionar-1 {
+    margin-top: 1.5625vw;
+}
+
+.button-adicionar {
+    margin-top: 5%;
+    padding: 0.5vw 3vw;
+    background-color: #680707;
+    border-radius: 1.5vw;
+    border: 0.1vw white solid;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.2vw;
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+}
+
+.button-adicionar:hover {
+    transition: 0.6s ease;
+    background-color: #F21D2F;
+}
+
+.input-adicionar {
+    margin-top: 5.46875vw;
+}
+
+.button-adicionar-user {
+    margin-bottom: 5vw;
+}
+
+.input-adicionar > form{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:450px){
+    
+    
+
+
+
+
+}

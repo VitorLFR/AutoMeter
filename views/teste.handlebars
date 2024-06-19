@@ -1,3 +1,13 @@
+<style>
+  body{
+    background-color: white;
+  }
+
+  hr{
+    margin-bottom: 2%;
+  }
+</style>
+
 {{#each listaUsers}}
 
   <p>Id do usuário: {{this.id}}</p>
@@ -57,6 +67,7 @@
   <p>Sala: {{this.sala}}</p>
   <p>Início: {{this.inicio}}</p>
   <p>Término: {{this.termino}}</p>
+  <p>Turno: {{this.turno}}</p>
 
   <h3>Professores:</h3>
   {{#each this.listaProfessoresDasTurmas}}
@@ -114,7 +125,10 @@
     <option value="Tipo">Tipo</option>
     <option value="Estudante">Estudante</option>
     <option value="Professor">Professor</option>
-    <option value="Outro">Outro Funcionario</option>
+    <option value="Coordenador">Coordenador</option>
+    <option value="Secretaria">Secretaria</option>
+    <option value="Limpeza">Limpeza</option>
+    <option value="Outro">Outro</option>
   </select>
 
   <button type="submit">Enviar</button>
@@ -125,7 +139,7 @@
 <h1>Criar turma</h1>
 <form action="/teste/registroTurma" method="post">
 
-  <labe for="">Nome</labe>
+  <label for="">Nome</label>
   <input type="text" name="nome" id="" />
 
   <label for="">Matéria</label>
@@ -138,10 +152,10 @@
   <input type="text" name="capacidade" />
 
   <label for="">Inicio</label>
-  <input type="text" name="inicio" />
+  <input type="date" name="inicio" />
 
   <label for="">Término</label>
-  <input type="text" name="termino" />
+  <input type="date" name="termino" />
 
   <label for="">Imagem</label>
   <input type="text" name="imagem" />
@@ -157,7 +171,7 @@
   <select name="turno">
     <option value="Turno">Turno</option>
     <option value="Manhã">Manhã</option>
-    <option value="Tarde<">Tarde</option>
+    <option value="Tarde">Tarde</option>
     <option value="Noite">Noite</option>
   </select>
 
@@ -176,10 +190,425 @@
   <select name="Turma" id="">
     {{#each listaTurmas}}
 
-      <option value={{this.nome}}>{{this.nome}}</option>
+      <option value="{{this.nome}}">{{this.nome}}</option>
 
     {{/each}}
   </select>
 
   <button type="submit">Enviar</button>
 </form>
+
+<hr>
+
+<h1>ATUALIZAR NOME (USUÁRIO)</h1>
+
+<form action="/teste/atualizarUserName" method="post">
+  <label for="">Nome do Usuário a ser atualizado</label>
+  <input type="text" name="nome">
+
+  <label for="">Email do Usuário a ser atualizado</label>
+  <input type="text" name="email">
+
+  <hr>
+
+  <label for="">Novo Nome</label>
+  <input type="text" name="NewName">
+
+  <button type="Submit">Enviar</button>
+</form>
+
+<hr>
+
+<h1>ATUALIZAR EMAIL (USUÁRIO)</h1>
+
+<form action="/teste/atualizarUserEmail" method="post">
+  <label for="">Nome do Usuário a ser atualizado</label>
+  <input type="text" name="nome">
+
+  <label for="">Email do Usuário a ser atualizado</label>
+  <input type="text" name="email">
+
+  <hr>
+
+  <label for="">Novo Email</label>
+  <input type="text" name="NewEmail">
+
+  <button type="Submit">Enviar</button>
+</form>
+
+<hr>
+
+<h1>ATUALIZAR SENHA (USUÁRIO)</h1>
+
+<form action="/teste/atualizarUserSenha" method="post">
+  <label for="">Nome do Usuário a ser atualizado</label>
+  <input type="text" name="nome">
+
+  <label for="">Email do Usuário a ser atualizado</label>
+  <input type="text" name="email">
+
+  <hr>
+
+  <label for="">Nova Senha</label>
+  <input type="text" name="NewSenha">
+
+  <button type="Submit">Enviar</button>
+</form>
+
+<hr>
+
+<h1>ATUALIZAR IMAGEM (USUÁRIO)</h1>
+
+<form action="/teste/atualizarUserImagem" method="post">
+  <label for="">Nome do Usuário a ser atualizado</label>
+  <input type="text" name="nome">
+
+  <label for="">Email do Usuário a ser atualizado</label>
+  <input type="text" name="email">
+
+  <hr>
+
+  <label for="">Nova Imagem</label>
+  <input type="text" name="NewImagem">
+
+  <button type="Submit">Enviar</button>
+</form>
+
+<hr>
+
+<h1>ATUALIZAR NÍVEL DE ACESSO (USUÁRIO)</h1>
+
+<form action="/teste/atualizarUserNivelDeAcesso" method="post">
+  <label for="">Nome do Usuário a ser atualizado</label>
+  <input type="text" name="nome">
+
+  <label for="">Email do Usuário a ser atualizado</label>
+  <input type="text" name="email">
+
+  <hr>
+
+  <label for="">Novo Nível de Acesso</label>
+  <select name="newNivelacesso">
+    <option value="Nível de acesso">Nível de acesso</option>
+    <option value="Administrativo Total">Administrativo Total</option>
+    <option value="Acesso Pedagógico Avançado">Acesso Pedagógico Avançado</option>
+    <option value="Acesso Pedagógico">Acesso Pedagógico</option>
+    <option value="Acesso Básico">Acesso Básico</option>
+  </select>
+
+  <button type="Submit">Enviar</button>
+</form>
+
+<hr>
+
+<h1>Deletar Usuário</h1>
+
+<form action="/teste/deleteUsuario" method="post">
+  <label for="">Nome do Usuário</label>
+  <input type="text" name="nome">
+
+  <label for="">Email do Usuário</label>
+  <input type="text" name="email">
+
+  <button type="submit">Enviar</button>
+</form>
+
+<hr>
+
+<h1>Atualizar Turma (NOME)</h1>
+
+<form action="/teste/atualizarNomeTurma" method="POST">
+  <div>
+    <label for="nome">Nome Atual da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novoNome">Novo Nome:</label>
+    <input type="text" id="novoNome" name="novoNome" required>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Nome</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Atualizar Turma (Turno)</h1>
+
+<form action="/teste/atualizarTurnoTurma" method="POST">
+  <div>
+    <label for="nome">Nome da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novoTurno">Novo Turno:</label>
+    <select name="novoTurno">
+      <option value="Turno">Turno</option>
+      <option value="Manhã">Manhã</option>
+      <option value="Tarde">Tarde</option>
+      <option value="Noite">Noite</option>
+    </select>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Turno</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Atualizar Turma (Capacidade)</h1>
+
+<form action="/teste/atualizarCapacidadeTurma" method="POST">
+  <div>
+    <label for="nome">Nome da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novaCapacidade">Nova Capacidade:</label>
+    <input type="number" id="novaCapacidade" name="novaCapacidade" required>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Capacidade</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Atualizar Turma (Matéria)</h1>
+
+<form action="/teste/atualizarMateriaTurma" method="POST">
+  <div>
+    <label for="nome">Nome da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novaMateria">Nova Matéria:</label>
+    <input type="text" id="novaMateria" name="novaMateria" required>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Matéria</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Atualziar Turma (Sala)</h1>
+
+<form action="/teste/atualizarSalaTurma" method="POST">
+  <div>
+    <label for="nome">Nome da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novaSala">Nova Sala:</label>
+    <input type="text" id="novaSala" name="novaSala" required>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Sala</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Atualizar Turma (Início)</h1>
+
+<form action="/teste/atualizarInicioTurma" method="POST">
+  <div>
+    <label for="nome">Nome da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novoInicio">Nova Data de Início:</label>
+    <input type="date" id="novoInicio" name="novoInicio" required>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Início</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Atualizar Turma (Término)</h1>
+
+<form action="/teste/atualizarTerminoTurma" method="POST">
+  <div>
+    <label for="nome">Nome da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novoTermino">Nova Data de Término:</label>
+    <input type="date" id="novoTermino" name="novoTermino" required>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Término</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Atualizar Turma (Professor)</h1>
+
+<form action="/teste/atualizarProfessorTurma" method="POST">
+  <div>
+    <label for="nome">Nome da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novoProfessor">Novo Professor:</label>
+    <select name="novoProfessor" id="">
+      {{#each listaProfessores}}
+        <option value={{this.nome}}>{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Professor</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Atualizar Turma (Imagem)</h1>
+
+<form action="/teste/atualizarImagemTurma" method="POST">
+  <div>
+    <label for="nome">Nome da Turma:</label>
+    <select name="nome" id="">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <label for="novaImagem">URL da Nova Imagem:</label>
+    <input type="url" id="novaImagem" name="novaImagem" required>
+  </div>
+
+  <div>
+    <button type="submit">Atualizar Imagem</button>
+  </div>
+</form>
+
+<hr>
+
+<h1>Adicionar Elogios (FAZER)</h1>
+
+<form action="/teste/adicionarElogio" method="post">
+  <label for="">Comentário</label>
+  <input type="text" name="elogioC">
+
+  <button>Enviar</button>
+</form>
+
+<hr>
+
+<h1>Adicionar Reclamação (FAZER)</h1>
+
+<form action="/teste/adicionarReclamacao" method="post">
+  <label for="">Tipo da Reclamação</label>
+  <input type="text" name="reclamacaoT">
+
+  <label for="">Comentário</label>
+  <input type="text" name="reclamacaoC">
+
+  <label for="">Gravidade da Reclamação</label>
+  <select name="reclamacaoG">
+    <option value="Gravidade">Gravidade</option>
+    <option value="Não Grave">Não Grave</option>
+    <option value="Pouco Grave">Pouco Grave</option>
+    <option value="Grave">Grave</option>
+    <option value="Muito Grave">Muito Grave</option>
+  </select>
+
+  <button>Enviar</button>
+</form>
+
+<hr>
+
+<h1>Adicionar Pontos para Estudantes: (FAZER)</h1>
+
+<form action="/teste/addUserPoints" method="post">
+
+  <label for="">Nome do Estudante</label>
+  <input type="text" name="nome">
+
+  <label for="">Turma do Estudante</label>
+  <input type="text" name="turma">
+
+  <label for="">Pontos</label>
+  <input type="text" name="points">
+
+  <button>Adicionar</button>
+  <button>Remover</button>
+
+</form>
+
+<hr>
+
+<h1>Deletar Turma</h1>
+
+<form action="/teste/deletarTurma" method="POST">
+  <div>
+    <label for="nomeTurma">Selecione a Turma a ser Deletada:</label>
+    <select name="nomeTurma" id="nomeTurma">
+      {{#each listaTurmas}}
+      <option value="{{this.nome}}">{{this.nome}}</option>
+      {{/each}}
+    </select>
+  </div>
+
+  <div>
+    <button type="submit">Deletar Turma</button>
+  </div>
+</form>
+
+<hr>

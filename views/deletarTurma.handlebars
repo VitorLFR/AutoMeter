@@ -1,0 +1,82 @@
+<header>
+  <div class="cabeçalho-areaturma">
+
+    <div class="logoHome-areaturma">
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
+    </div>
+
+    <div class="cabecalhoOp">
+      <ul>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+<main class="deletar-usuario">
+
+  <section>
+
+    <div class="info-deletar">
+      <p>Deletar Turma</p>
+    </div>
+
+    <div>
+      <form action="/deletarTurmas" method="post">
+        <div class="completo-deletar-turma">
+          <p id="adicionar-1">Nome da Turma : </p>
+          <select name="nomeTurma">
+            {{#each listaTurma}}
+            <option value="{{this.nome}}">{{this.nome}}</option>
+            {{/each}}
+          </select>
+        </div>
+
+        <div class="button-deletar-user">
+          <button class="button-adicionar" type="submit">DELETAR</button>
+        </div>
+
+      </form>
+    </div>
+
+   
+  </section>{{! fechando section deletar-usuario }}
+
+  <section class="info-deletar2">
+    <div class="icon-deletar">
+      <img src="/medias/images/danger.svg" alt="" />
+    </div>
+
+    <div class="atencao">
+      <p>ATENÇÃO!</p>
+    </div>
+
+    <div class="atencao-info">
+      <p>Essa ação não poderá ser desfeita.</p>
+    </div>
+
+  </section>
+
+</main>
+
+<div class="retorno">
+
+  <a href="/gerenciamentoEscolar">Voltar</a>
+
+</div>
+
+<footer class="quarta-sessao">
+
+  <div class="footer-conta">
+    <div class="img-footer">
+      <img src="medias/images/Logo.svg" alt="" />
+    </div>
+
+    <p>@2024 direitos autorais de autometer</p>
+    <p>voltar para o inicio ^</p>
+  </div>
+
+</footer>

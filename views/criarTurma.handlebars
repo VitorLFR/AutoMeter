@@ -2,14 +2,14 @@
   <div class="cabeçalho-areaturma">
 
     <div class="logoHome-areaturma">
-      <img src="medias/images/Logo.svg" alt="" />
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
     </div>
 
     <div class="cabecalhoOp">
       <ul>
         <li><a href="#">Contato</a></li>
         <li><a href="#">Sobre</a></li>
-        <li><a href="/conta"><img src="medias/images/signInIcon.svg" alt="" /></a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
       </ul>
     </div>
 
@@ -17,6 +17,12 @@
 </header>
 
 <main class="main-registro">
+
+  <div class="primeira-sessao">
+
+      <a href="/gerenciamentoEscolar">Voltar</a>
+
+    </div>
 
   <section class="detalhe-registro">
 
@@ -28,84 +34,82 @@
 
   <section class="info-registro">
 
-    <div class="part1-info">
-      <div class="completo">
-        <div class="descricaoBox-registro">
-          <p>Nome da Turma : </p>
-          <input type="text" placeholder="Escreva nome da turma..." />
+    <form action="/registroTurma" method="post">
+      <div class="part1-info">
+        <div class="completo">
+          <div class="descricaoBox-registro">
+            <p>Nome da Turma : </p>
+            <input type="text" name="nome" placeholder="Escreva nome da turma..." />
+          </div>
         </div>
-      </div>
-      <div class="registro-email">
-        <div class="descricaoBox-registro">
-          <p>Matéria : </p>
-          <input type="text" placeholder="Escreva a matéria..." />
-        </div>
-      </div>
-    </div>
-
-    <div class="part1-info">
-
-      <div class="registro-email">
-        <div class="descricaoBox-registro">
-          <p>Capacidade : </p>
-          <input type="number" placeholder="Capacidade de pessoass..." />
-        </div>
-      </div>
-
-      <div class="registro-email">
-        <div class="descricaoBox-registro">
-          <p>Início : </p>
-          <input type="text" placeholder="Data de início..." />
-        </div>
-      </div>
-    </div>
-    <div class="part1-info">
-
-      <div class="registro-email">
-        <div class="descricaoBox-registro">
-          <p>Término : </p>
-          <input type="text" placeholder="Data de Término..." />
-        </div>
-      </div>
-
-      <div class="registro-email">
-        <div class="descricaoBox-registro">
-          <p>Professor : </p>
-          <input type="text" placeholder="Nome do professor..." />
-        </div>
-      </div>
-    </div>
-
-    <div class="part1-info">
         <div class="registro-email">
           <div class="descricaoBox-registro">
-            <p>Imagem : </p>
-            <input type="text" placeholder="Url da imagem..." />
+            <p>Matéria : </p>
+            <input type="text" name="materia" placeholder="Escreva a matéria..." />
           </div>
-        </div>
-        <div class="descricaoBox-registro">
-            <p>Sala : </p>
-            <input type="text" placeholder="Escreva número da sala..." />
-          </div>
-    </div>
-
-    <div class="completo">
-    
-      <div>
-        <div class="configuracaoBox-registro">
-          <select name="tipo">
-            <option value="Turno">Turno</option>
-            <option value="Manhã">Manhã</option>
-            <option value="Tarde">Tarde</option>
-            <option value="Noite">Noite</option>
-          </select>
         </div>
       </div>
-    </div>
-
-    <div class="botao-info">
-      <button class="button-login-info" type="submit">Enviar</button>
-    </div>
+      <div class="part1-info">
+        <div class="registro-email">
+          <div class="descricaoBox-registro">
+            <p>Capacidade : </p>
+            <input type="number" name="capacidade" placeholder="Capacidade de pessoass..." />
+          </div>
+        </div>
+        <div class="registro-email">
+          <div class="descricaoBox-registro">
+            <p>Início : </p>
+            <input type="date" name="inicio" placeholder="Data de início..." />
+          </div>
+        </div>
+      </div>
+      <div class="part1-info">
+        <div class="registro-email">
+          <div class="descricaoBox-registro">
+            <p>Término : </p>
+            <input type="date" name="termino" placeholder="Data de Término..." />
+          </div>
+        </div>
+        <div class="registro-email">
+          <div class="descricaoBox-registro">
+            <p>Professor : </p>
+            <select name="professor" id="">
+              {{#each listaProfessores}}
+              <option value={{this.nome}}>{{this.nome}}</option>
+              {{/each}}
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="part1-info">
+          <div class="registro-email">
+            <div class="descricaoBox-registro">
+              <p>Imagem : </p>
+              <input type="text" name="imagem" placeholder="Url da imagem..." />
+            </div>
+          </div>
+          <div class="descricaoBox-registro">
+              <p>Sala : </p>
+              <input type="text" name="sala" "Escreva número da sala..." />
+            </div>
+      </div>
+      <div class="completo">
+      
+        <div>
+          <div class="configuracaoBox-registro">
+            <select name="turno">
+              <option value="Turno">Turno</option>
+              <option value="Manhã">Manhã</option>
+              <option value="Tarde">Tarde</option>
+              <option value="Noite">Noite</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="botao-info">
+        <button class="button-adicionar" style="margin-bottom: 5%;" type="submit">Enviar</button>
+      </div>
+    </form>
 
   </section>
 

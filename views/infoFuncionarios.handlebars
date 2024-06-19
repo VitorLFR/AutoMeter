@@ -2,7 +2,7 @@
   <div class="cabeçalho-areaturma">
 
     <div class="logoHome-areaturma">
-      <a href="/"><img src="/medias/images/Logo.svg" alt="" /></a>
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
     </div>
 
     <div class="cabecalhoOp">
@@ -16,35 +16,36 @@
   </div>
 </header>
 
-<main>
+<main> 
 
   <section class="area">
 
     <div class="primeira-sessao">
 
-      <a href="/areaturma">Voltar</a>
+      <a href="/gerenciamentoEscolar">Voltar</a>
 
     </div>
 
     <div class="segunda-sessao">
 
-      <p id="p-1">{{nomeTurma}}</p>
-
-      <p id="p-sala">Sala: {{salaTurma}}</p>
+      <p id="p-1">LISTA DE FUNCIONÁRIOS</p>
 
     </div>
 
   </section>
 
   <section class="cards-infoturmas">
-    {{#each listaEstudantes}}
-    <div class="card-infoturmas">
-      <img src="{{imagemAluno}}" alt="{{nomeAluno}}">
-      <p>Nome do Aluno:</p>
-      <a href="/avaliacao/{{idAluno}}">{{nomeAluno}}</a>
-    </div>
+    {{#each listaFuncionarios}}
+            <div class="card-infoturmas">
+                <img src="{{this.imagem}}" alt="">
+                <p>Tipo:</p>
+                <p style="color: white;">{{this.tipo}}</p>
+                <p>Nome do Funcionário:</p>
+                <a href="/status/{{this.id}}">{{this.nome}}</a>
+            </div>
     {{/each}}
-  </section>
+</section>
+
 
 </main>
 

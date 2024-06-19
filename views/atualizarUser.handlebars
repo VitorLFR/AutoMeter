@@ -1,0 +1,308 @@
+<header>
+  <div class="cabeçalho-areaturma">
+
+    <div class="logoHome-areaturma">
+      <a href="/"><img src="medias/images/Logo.svg" alt="" /></a>
+    </div>
+
+    <div class="cabecalhoOp">
+      <ul>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
+      </ul>
+    </div>
+
+  </div>
+</header>
+
+<main class="atualizar-user">
+
+  <div class="titulo-atualizar">
+    <p>Detalhes do Usuário</p>
+  </div>
+
+  <section class="atualizar-1">
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR NOME</p>
+
+      <form action="/atualizarUserName" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome: </p>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Escreva nome do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Email : </p>
+              <input
+                type="text"
+                name="email"
+                placeholder="Escreva o email do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Novo Nome : </p>
+              <input
+                type="text"
+                name="NewName"
+                placeholder="Escreva o novo nome..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Nome</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-email">
+
+      <p id="atuali-1">ATUALIZAR EMAIL</p>
+
+      <form action="/atualizarUserEmail" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome: </p>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Escreva o nome do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Email : </p>
+              <input
+                type="text"
+                name="email"
+                placeholder="Escreva o email do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Novo Email : </p>
+              <input
+                type="text"
+                name="NewEmail"
+                placeholder="Escreva o novo email..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Email</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-senha">
+
+      <p id="atuali-1">ATUALIZAR SENHA</p>
+
+      <form action="/atualizarUserSenha" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome : </p>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Escreva nome do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Email : </p>
+              <input
+                type="text"
+                name="email"
+                placeholder="Escreva o email do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Nova Senha : </p>
+              <input
+                type="text"
+                name="NewSenha"
+                placeholder="Escreva a nova senha..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Senha</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="atualizar-2">
+
+    <div class="atualizar-nome">
+
+      <p id="atuali-1">ATUALIZAR IMAGEM</p>
+
+      <form action="/atualizarUserImagem" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome: </p>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Escreva nome do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Email : </p>
+              <input
+                type="text"
+                name="email"
+                placeholder="Escreva o email do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Nova Imagem : </p>
+              <input
+                type="text"
+                name="NewImagem"
+                placeholder="Cole a url da nova imagem..."
+              />
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Nome</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="atualizar-email">
+
+      <p id="atuali-1">ATUALIZAR NíVEL DE ACESSO</p>
+
+      <form action="/atualizarUserNivelDeAcesso" method="post">
+
+        <div>
+
+          <div>
+
+            <div class="descricaoBox-registro">
+              <p>Nome: </p>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Escreva nome do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Email : </p>
+              <input
+                type="text"
+                name="email"
+                placeholder="Escreva o email do usuário..."
+              />
+            </div>
+
+            <div class="descricaoBox-registro">
+              <p>Novo Nível de Acesso : </p>
+              <select name="newNivelacesso">
+              <option value="Nível de acesso">Nível de acesso</option>
+              <option value="Acesso Básico">Acesso Básico</option>
+              {{#if (gte AcessLevel 3)}}
+              <option value="Acesso Pedagógico">Acesso Pedagógico</option>
+              {{/if}}
+              {{#if (gte AcessLevel 4)}}
+              <option value="Acesso Pedagógico Avançado">Acesso Pedagógico Avançado</option>
+              {{/if}}              
+            </select>
+            </div>
+
+            <div class="botao-atualizar">
+              <button class="button-adicionar" type="submit">Atualizar
+                Email</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <div class="info-deletar2-atualizarUser">
+
+      <div class="icon-deletar">
+        <img src="/medias/images/danger.svg" alt="" />
+      </div>
+
+      <div class="atencao-atualizarUser">
+        <p>ATENÇÃO!</p>
+      </div>
+
+      <div class="atencao-info-atualizarUser">
+        <p>Aumente o nível de acesso somente de pessoas confiáveis, pois, se
+          mal-intencionados, o usuário pode causar danos irreversíveis.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <div class="retorno">
+
+    <a href="/gerenciamentoEscolar">Voltar</a>
+
+  </div>
+
+</main>
+
+<footer class="quarta-sessao">
+
+  <div class="footer-conta">
+    <div class="img-footer">
+      <img src="medias/images/Logo.svg" alt="" />
+    </div>
+
+    <p>@2024 direitos autorais de autometer</p>
+    <p>voltar para o inicio ^</p>
+  </div>
+
+</footer>

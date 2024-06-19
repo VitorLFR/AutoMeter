@@ -33,6 +33,22 @@
   margin-bottom: 100%;
 }
 
+.menu-lateral > a{
+  color: #F21D2F;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.3vw;
+  cursor: pointer;
+  border-radius: 1vw;
+  width: 70%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.menu-lateral > a:hover{
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
 .menu-lateral-itens > a {
   font-size: 1.5vw;
   margin-top: 45%;
@@ -100,6 +116,7 @@
   color: white;
   margin: 0 auto;
   font-size: 1.25vw;
+  border-radius: 1vw;
 }
 
 #p-conta,
@@ -120,4 +137,93 @@
   align-items: center;
   height: 7.8125vw;
   font-size: 1.640625vw;
+}
+
+.statusTable2{
+  font-size: 1.3vw;
+}
+
+.informacoes > h2{
+  font-size: 2vw;
+}
+
+.informacoes > h3{
+  font-size: 1.5vw;
+}
+
+
+@media screen and (max-width:450px) {
+
+  
+
+  .menu-lateral{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 40px;
+    position: absolute;
+
+  }
+
+  .menu-lateral-itens{
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    margin-top: 3%;
+    font-size: 15px;
+    width: 400px;
+    margin-left: 4%;
+   
+    
+  }
+
+  .informacoes{
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 10% ;
+    position: relative;
+    width: 90%;
+    height: 450px;
+  }
+
+
+  .menu-lateral-itens2{
+    display: none;
+  }
+  .container-conta{
+    font-size: 12px;
+    height: 200px;
+    
+
+  }
+
+
+  footer{
+    width: 100%;
+    height: 20%;
+    flex-direction: column;
+    position: absolute;
+    display: flex;
+    
+
+  }
+
+
+
+  .footer-conta{
+    
+    font-size:15px;
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+
+
+
 }

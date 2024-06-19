@@ -24,4 +24,66 @@
   .button-login-info:hover {
     background-color: #F21D2F;
     cursor: pointer;
+  } 
+
+  /* mobile aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+  @media screen and (max-width: 600px) {
+
+    .part1-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+    }
+  
+    .botao-info {
+      padding-left: 0;
+      text-align: center;
+    }
+  
+    .button-login-info {
+      width: 60%;
+      height: 40px;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 16px;
+    }
+  
+    .cabecalhoOp ul {
+      align-items: center;
+      padding: 0;
+    }
+  
+    .cabecalhoOp ul li {
+      margin-bottom: 10px;
+    }
+
+    .detalhe-registro p {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .footer-conta {
+      text-align: center;
+    }
+  
+    .img-footer {
+      margin-bottom: 10px;
+    }
+  
+    .main-registro {
+      padding: 10px;
+    }
+  
+    .descricaoBox-registro p {
+      margin-bottom: 5px;
+    }
+  
+    .descricaoBox-registro input,
+    .configuracaoBox-registro select {
+      width: 187%;
+      height: 18px;
+      font-size: 10px;
+    }
   }

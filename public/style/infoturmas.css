@@ -2,12 +2,13 @@
   font-size: 2vw;
 }
 
-.cards-infoturmas {
+.cards-infoturmas /* Div pai */ {
   color: white;
   width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
   margin-top: 5vw;
@@ -17,6 +18,7 @@
     text-align: center;
     font-size: 1vw;
     width: 22%;
+    margin-bottom: 5%;
 }
 
 .card-infoturmas > img{
@@ -39,3 +41,35 @@
     color: #F21D2F;
 }
   
+/* mobile aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+@media screen and (max-width: 600px) {
+  #p-sala {
+    font-size: 16px; /* Alterando o tamanho da fonte para telas menores */
+  }
+
+  .cards-infoturmas {
+    width: 100%; /* Definindo a largura para ocupar toda a largura da tela */
+   
+  }
+
+  .card-infoturmas {
+    width: 50%; /* Definindo a largura para ocupar toda a largura da tela */
+    margin-bottom: 5%; /* Adicionando margem inferior */
+  }
+
+  .card-infoturmas > img {
+    width: 38%; /* Definindo a largura da imagem para ocupar toda a largura do contêiner */
+    height: 19vw;
+
+
+  }
+
+  .card-infoturmas > p {
+    font-size: 14px; /* Alterando o tamanho da fonte para telas menores */
+  }
+
+  .card-infoturmas > a {
+    font-size: 12px; /* Alterando o tamanho da fonte para telas menores */
+  }
+
+}

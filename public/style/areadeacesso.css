@@ -1,3 +1,8 @@
+h6{
+    color: white;
+    display: none;
+}
+
 .mainAreadeacesso{
     margin-top: 3%;
 }
@@ -98,4 +103,8 @@
     width: 60%;
     left: 20%;
     text-decoration: none;
+}
+
+.option>a>img{
+    width: 6vw;
 }

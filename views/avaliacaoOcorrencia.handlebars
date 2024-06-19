@@ -2,14 +2,14 @@
     <div class="cabeçalho-areaturma">
 
         <div class="logoHome-areaturma">
-            <img src="medias/images/Logo.svg" alt="" />
+            <a href="/"><img src="/medias/images/Logo.svg" alt="" /></a>
         </div>
 
         <div class="cabecalhoOp">
             <ul>
                 <li><a href="#">Contato</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="/conta"><img src="medias/images/signInIcon.svg" alt="" /></a></li>
+                <li><a href="/conta/:id"><img src="/medias/images/signInIcon.svg" alt="" /></a></li>
             </ul>
         </div>
 
@@ -22,12 +22,13 @@
 
         <div class="menu-lateral-itens">
             <h2>Status</h2>
-            <a href="/avaliacao.elogio">Elogios</a>
-            <a href="/avaliacao.ocorrencia">Ocorrências</a>
+            <a href="/avaliacao.elogio/{{usuarioId}}">Elogios</a>
+            <a href="/avaliacao.ocorrencia/{{usuarioId}}">Ocorrências</a>
+            <a href="/status/{{usuarioId}}">Informações</a>
         </div>
 
         <div class="menu-lateral-itens2">
-            <a id="p-voltar" href="#">VOLTAR</a>
+            <a id="p-voltar" href="/areaturma">VOLTAR</a>
         </div>
 
     </div>
@@ -35,16 +36,7 @@
     <div class="informacoes">
 
         <div class="img-center">
-            <img src="medias/images/cunamata.svg" alt="" />
-        </div>
-
-        <h1 class="informacoesText">PONTUAÇÃO</h1>
-        <p id="userPoints" class="informacoesText">Pontos: 20 pontos</p>
-
-        <div class="points">
-            <button id="userPointsAdd">+</button>
-            <input type="number" id="userPointsModifier">
-            <button id="userPointsRemove">-</button>
+            <img src={{imagemUsuario}} alt="" />
         </div>
 
         <div class="container-conta" style="border: none;">
@@ -54,44 +46,38 @@
                 <div class="avaliacaoTable">
                     <h1>Ocorrência</h1>
 
-                    <div class="ocorrenciaBox">
-                        <div class="configuracaoContainer">
-                            <div class="configuracaoBox">
-                                <p>Gravidade: </p>
-                                <select name="gravidade" >
-                                    <option value="Não Grave">Não Grave</option>
-                                    <option value="Pouco Grave">Pouco Grave</option>
-                                    <option value="Grave">Grave</option>
-                                    <option value="Muito Grave">Muito Grave</option>
-                                </select>
+                    <form action="/adicionarReclamacao/{{usuarioId}}" method="post">
+                        <div class="ocorrenciaBox">
+                            <div class="configuracaoContainer">
+                                <div class="configuracaoBox">
+                                    <p>Gravidade: </p>
+                                    <select name="gravidade">
+                                        <option value="Pouco Grave">Pouco Grave</option>
+                                        <option value="Grave">Grave</option>
+                                        <option value="Muito Grave">Muito Grave</option>
+                                    </select>
+                                </div>
+                                <div class="configuracaoBox">
+                                    <p>Tipo: </p>
+                                    <select name="tipo">
+                                        <option value="Atraso">Atraso</option>
+                                        <option value="Má conduta">Má conduta</option>
+                                        <option value="Não entregou atividade">Não entregou atividade</option>
+                                        <option value="Outros">Outros</option>
+                                    </select>
+                                </div>
                             </div>
-                            <div class="configuracaoBox">
-                                <p>Tipo: </p>
-                                <select name="tipo">
-                                    <option value="Atraso">Atraso</option>
-                                    <option value="Mal comportamento">Mal comportamento</option>
-                                    <option value="Violência">Violência</option>
-                                    <option value="Não realizou a tarefa">Não realizou a atividade</option>
-                                    <option value="Entrega tarefas atrasadas com frequência">Entrega atividades atrasadas com frequência</option>
-                                    <option value="Falta com frequência">Falta com frequência</option>
-                                    <option value="Desrespeito com as regras do ambiente">Desrespeito com as regras do ambiente</option>
-                                    <option value="Depradação do ambiente">Depradação do ambiente</option>
-                                    <option value="Falta de respeito">Falta de respeito</option>
-                                    <option value="Outro">Outro</option>
-                                </select>
+                            <div class="descricaoBox">
+                                <p>Descrição: </p>
+                                <input type="text" name="descricao" placeholder="Escreva um comentário...">
+                            </div>
+                            <div class="ocorrenciaSend">
+                                <button type="submit">Enviar</button>
                             </div>
                         </div>
+                    </form>
 
-                        <div class="descricaoBox">
-                            <p>Descrição: </p>
-                            <input type="text" placeholder="Escreva um comentário...">
-                        </div>
 
-                        <div class="ocorrenciaSend">
-                            <button>Enviar</button>
-                        </div>
-
-                    </div>
                 </div>
 
             </div>
@@ -104,7 +90,7 @@
 
     <div class="footer-conta">
         <div class="img-footer">
-            <img src="medias/images/Logo.svg" alt="" />
+            <img src="/medias/images/Logo.svg" alt="" />
         </div>
 
         <p>@2024 direitos autorais de autometer</p>

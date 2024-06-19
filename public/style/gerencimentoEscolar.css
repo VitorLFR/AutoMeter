@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 95%;
     margin: 0 auto;
     margin-top: 7.8125vw;
@@ -13,13 +14,14 @@
 }
 
 .card-gerenciamento {
-    width: 20%;
+    width: 22%;
     height: 15.625vw;
     text-align: center;
     background: #1B1A1A;
     border-radius: 1.171875vw;
     border: solid 0.1171875vw black;
     padding-top: 1.8vw;
+    margin-bottom: 2%;
 }
 
 .card-gerenciamento > img {
@@ -30,6 +32,70 @@
     margin-top: 0.78125vw;
 }
 
-.descricao-gerenciamento > p {  
-    font-size: 1.5625vw;
+.descricao-gerenciamento > a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease;
 }
+
+.descricao-gerenciamento > a > p {  
+    font-size: 1.5vw;
+}
+
+.descricao-gerenciamento > a:hover{
+    text-decoration: underline;
+    color: #F21D2F;
+    transition: 0.5s ease;
+}
+
+/* mobile 800px aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+@media screen and (max-width: 600px) {
+
+    .primeira-sessao a{
+    font-size: 14px;
+    }
+
+    #p-sala{
+        font-size: 10px;
+    }
+
+    .cards-gerenciamento {
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+
+    }
+  
+    .card-gerenciamento {
+        height: 15%;
+      width: 40%;
+      padding-bottom: 1.8vw;
+    }
+  
+    .card-gerenciamento > img {
+      width: 25%;
+    }
+  
+    .descricao-gerenciamento {
+      margin-top: 1vw;
+    }
+  
+    .descricao-gerenciamento > a > p {
+        bottom: 3%;
+      font-size: 12px;
+      margin-top: -3%;
+    }
+
+    .img-footer img{
+      width: 30%;
+      margin-left: 35%;
+      margin-bottom: -5%;
+    }
+
+    .footer-conta p{
+      margin-bottom: -1%;
+    }
+  
+  }
